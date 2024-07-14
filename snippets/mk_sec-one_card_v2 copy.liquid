@@ -1,0 +1,157 @@
+{%- if media == 'pc' -%}
+  {% comment %} pc端 {% endcomment %}
+
+    <div class="mk-w-[100%] mk-h-[330px] mk-flex  mk-mb-4">
+      {%- if block.settings.card_type == 'type1' -%}
+        <div class="mk-w-[280px] mk-h-[330px] mk-bg-slate-50 mk-rounded-2xl mk-mr-4 mk-flex mk-flex-col mk-justify-center mk-items-start mk-px-6">
+          <div class="mk-w-20 mk-h-20 mk-mb-4">
+            <picture class="mk-h-20 mk-block">
+              <img
+                lazy
+                class="mk-object-cover mk-h-20 "
+                src="{{ block.settings.product_image }}"
+                width="100%"
+                height="100%"
+              >
+            </picture>
+          </div>
+          <div class="mk-w-[232px] mk-text-black mk-text-[17px] mk-font-bold mk-font-['Montserrat'] mk-leading-[21px] mk-mb-2">
+            {{ block.settings.card_text1 }}
+          </div>
+          <div class="mk-w-[232px] mk-text-black mk-text-sm mk-font-medium mk-font-['Montserrat'] mk-leading-[18px]">
+            {{ block.settings.card_text2 }}
+          </div>
+          {%- if block.settings.url != blank -%}
+            <a
+              href="{{ block.settings.url }}"
+              {%- if block.settings.new_Window -%}
+                target="_blank"
+              {%- endif -%}
+              class="mk-text-center !mk-text-blue-600 mk-text-sm mk-flex mk-justify-start mk-items-center mk-font-medium mk-font-['Montserrat'] mk-leading-[18px] mk-mt-4"
+              >
+              {{ block.settings.url_text }}  
+              <span class="mk-w-[15px] mk-h-[14px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                <path d="M5.02292 1.96924C4.81171 2.21787 4.82996 2.58444 5.05671 2.8111L5.09424 2.84568L9.7564 6.80619L5.08847 10.8709C4.82949 11.0964 4.80236 11.4892 5.02788 11.7482C5.24152 11.9935 5.60527 12.0308 5.86317 11.8423L5.90513 11.8088L10.5731 7.74403C10.62 7.70314 10.6638 7.65877 10.7042 7.61131C11.134 7.10532 11.0887 6.35511 10.6123 5.904L10.5615 5.85842L5.89936 1.89792C5.63765 1.67559 5.24525 1.70752 5.02292 1.96924Z" fill="#0074FF"/>
+              </svg>
+              </span>
+            </a
+            >
+          {%- endif -%}
+        </div>
+        <div class="mk-w-96 mk-h-[330px]">
+          <picture class="mk-h-[330px] mk-block">
+            <img
+              lazy
+              class="mk-object-cover mk-h-[330px] mk-rounded-2xl"
+              src="{{ block.settings.pc_image }}"
+              width="100%"
+              height="100%"
+            >
+          </picture>
+        </div>
+      {%- else -%}
+        <div class="mk-w-96 mk-h-[330px] mk-mr-4">
+          <picture class="mk-h-[330px] mk-block">
+            <img
+              lazy
+              class="mk-object-cover mk-h-[330px] mk-rounded-2xl"
+              src="{{ block.settings.pc_image }}"
+              width="100%"
+              height="100%"
+            >
+          </picture>
+        </div>
+        <div class="mk-w-[280px] mk-h-[330px] mk-bg-slate-50 mk-rounded-2xl  mk-flex mk-flex-col mk-justify-center mk-items-start mk-px-6">
+          <div class="mk-w-20 mk-h-20 mk-mb-4">
+            <picture class="mk-h-20 mk-block">
+              <img
+                lazy
+                class="mk-object-cover mk-h-20 "
+                src="{{ block.settings.product_image }}"
+                width="100%"
+                height="100%"
+              >
+            </picture>
+          </div>
+          <div class="mk-w-[232px] mk-text-black mk-text-[17px] mk-font-bold mk-font-['Montserrat'] mk-leading-[21px] mk-mb-2">
+            {{ block.settings.card_text1 }}
+          </div>
+          <div class="mk-w-[232px] mk-text-black mk-text-sm mk-font-medium mk-font-['Montserrat'] mk-leading-[18px]">
+            {{ block.settings.card_text2 }}
+          </div>
+          {%- if block.settings.url != blank -%}
+            <a
+              href="{{block.settings.url}}"
+              {%- if block.settings.new_Window -%}
+                target="_blank"
+              {%- endif -%}
+              class="mk-text-center !mk-text-blue-600 mk-flex mk-justify-start mk-items-center mk-text-sm mk-font-medium mk-font-['Montserrat'] mk-leading-[18px] mk-mt-4"
+            >
+              {{- block.settings.url_text }}  <span class="mk-w-[15px] mk-h-[14px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                <path d="M5.02292 1.96924C4.81171 2.21787 4.82996 2.58444 5.05671 2.8111L5.09424 2.84568L9.7564 6.80619L5.08847 10.8709C4.82949 11.0964 4.80236 11.4892 5.02788 11.7482C5.24152 11.9935 5.60527 12.0308 5.86317 11.8423L5.90513 11.8088L10.5731 7.74403C10.62 7.70314 10.6638 7.65877 10.7042 7.61131C11.134 7.10532 11.0887 6.35511 10.6123 5.904L10.5615 5.85842L5.89936 1.89792C5.63765 1.67559 5.24525 1.70752 5.02292 1.96924Z" fill="#0074FF"/>
+              </svg>
+              </span></a
+            >
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+
+
+{%- else -%}
+  {% comment %} 移动端 {% endcomment %}
+  <div class="w-[100%] mk-mb-4 ">
+    <div class="mk-px-4 mk-py-10 mk-bg-slate-50 mk-rounded-tl-2xl mk-rounded-tr-2xl">
+        <div class="mk-w-20 mk-h-20 mk-mb-4">
+      <picture class="mk-h-20 mk-block">
+        <img
+          lazy
+          class="mk-object-cover mk-h-20 "
+          src="{{ block.settings.product_image }}"
+          width="100%"
+          height="100%"
+        >
+      </picture>
+    </div>
+
+    <div class="mk-text-black mk-text-[17px] mk-font-bold mk-font-['Montserrat'] mk-leading-[21px] mk-mb-2">
+      {{ block.settings.card_text1 }}
+    </div>
+    <div class="mk-text-black mk-text-sm mk-font-medium mk-font-['Montserrat'] mk-leading-[18px]">
+      {{ block.settings.card_text2 }}
+    </div>
+
+    {%- if block.settings.url != blank -%}
+      <a
+        href="{{ block.settings.url }}"
+        {%- if block.settings.new_Window -%}
+          target="_blank"
+        {%- endif -%}
+        href="{{section.settings.url}}"
+        class="mk-text-center !mk-text-blue-600 mk-flex mk-justify-start mk-items-center mk-text-sm mk-font-medium mk-font-['Montserrat'] mk-leading-[18px] mk-mt-4"
+        >{{ block.settings.url_text}} 
+        <span class="mk-w-[15px] mk-h-[14px]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+          <path d="M5.02292 1.96924C4.81171 2.21787 4.82996 2.58444 5.05671 2.8111L5.09424 2.84568L9.7564 6.80619L5.08847 10.8709C4.82949 11.0964 4.80236 11.4892 5.02788 11.7482C5.24152 11.9935 5.60527 12.0308 5.86317 11.8423L5.90513 11.8088L10.5731 7.74403C10.62 7.70314 10.6638 7.65877 10.7042 7.61131C11.134 7.10532 11.0887 6.35511 10.6123 5.904L10.5615 5.85842L5.89936 1.89792C5.63765 1.67559 5.24525 1.70752 5.02292 1.96924Z" fill="#0074FF"/>
+        </svg>
+        </span>
+        </a
+      >
+    {%- endif -%}
+    </div>
+    
+    <div class="mk-w-[100%] mk-h-[332px] mk-mr-4">
+      <picture class="mk-w-[100%] mk-h-[332px] mk-block">
+        <img
+          lazy
+          class="mk-object-cover mk-h-[332px] mk-rounded-b-2xl"
+          src="{{ block.settings.mo_image }}"
+          width="100%"
+          height="100%"
+        >
+      </picture>
+    </div>
+  </div>
+{%- endif -%}
