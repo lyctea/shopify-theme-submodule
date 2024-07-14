@@ -1,0 +1,56 @@
+<script>
+  {% render 'lit.min.js' %}
+  {% render 'mkt-components-autoloader@0.6.0.js' %}
+
+  var componentsVersion = {
+    'mkt-pagination': '0.4.0',
+    'mkt-icon': '0.13.1',
+    'mkt-popover': '0.13.3',
+    'plugin-redirect-bar': '0.8.0',
+    'plugin-turntable': '0.9.1',
+    'mkt-login-register-modal': '0.7.1',
+    'mkt-webpush-modal': '0.2.0',
+    'mkt-quiz': '0.7.10',
+    'mkt-contact-us': '0.9.0',
+    'mkt-product-recommend-popup-cart': '0.8.0',
+    'mkt-annoucement-topbar': '0.9.0',
+    'mkt-drawer': '0.8.0',
+    'mkt-product-recommend-popup-cart-plus': '0.1.0',
+    'mkt-product-recommend-mobile-cart': '0.8.1',
+    'mkt-product-recommend-pc-cart': '0.8.1',
+    'mkt-shipping-rates-calc': '0.5.4',
+    'mkt-point-cashback-guide': '0.4.0',
+    'mkt-account-point-store': '0.7.8',
+    'mkt-my-points': '0.4.0',
+    'mkt-toast': '0.4.0',
+    'mkt-modal': '0.5.0',
+    'mkt-address-modal': '0.6.4',
+    'mkt-collapse': '0.3.0',
+    'mkt-collapse-group': '0.3.0',
+    'mkt-rate': '0.9.0',
+    'mkt-gallery-number': '0.3.0',
+    'mkt-secondary-nav-general': '0.5.1',
+    'mkt-goaffpro-discount': '0.34.2',
+    'mkt-input': '0.5.0',
+    'mkt-product-recommend-ultimate': '0.5.3',
+    'mkt-select-country': '0.6.1',
+    'mkt-product-frequently-bought': '0.9.3',
+    'mkt-select': '0.7.8',
+  };
+
+  if (window.componentAutoLoader) {
+    componentAutoLoader({
+      version: componentsVersion,
+      test: true,
+      exclude: [
+        'mkt-my-points-refresh',
+        'mkt-product-recommend-popup-cart-plus',
+        'mkt-product-recommend-mobile-cart',
+        'mkt-product-recommend-pc-cart',
+        'mkt-description',
+        'mkt-goto-product-tip',
+      ],
+      preload: ['mkt-icon', 'mkt-modal', 'mkt-input', 'mkt-toast', 'mkt-select', 'mkt-address-modal', 'mkt-pagination'],
+    });
+  }
+</script>

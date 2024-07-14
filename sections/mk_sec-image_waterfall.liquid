@@ -1,0 +1,180 @@
+{% comment %} 耗材页图片瀑布流 {% endcomment %}
+{% comment %} {%  assign isVertical =  section.settings.isVertical %} {% endcomment %}
+{% assign blocks = section.blocks %}
+{% assign img_height_arr = '393,440,256,305,256,377,256,184,300,237,280' | split: ',' %}
+{% assign mo_img_height_arr = '230,177,147,152,139,144,193,230' | split: ',' %}
+<div class="mk-flex mk-justify-center mk-items-center mk-flex-col sm:mk-items-start">
+  <p class="mk-font-[600] mk-my-[48px] mk-text-[24px] mobile:mk-mx-4 mobile:mk-mt-0 mobile:mk-mb-[32px]">{{ section.settings.category_title }}</p>
+  <div class="mk-flex mk-justify-start mk-items-start mk-gap-[16px] sm:mk-gap-[8px] mk-flex-wrap mk-w-[1200px] sm:mk-w-[100%] sm:mk-h-[730px] mk-flex-col mk-h-[900px] sm:mk-place-content-center">
+    {% for item in blocks %}
+      <div class="mk-flex {% unless item.settings.mo_image %} sm:mk-hidden {% endunless %} mk-overflow-hidden">
+        <a href="{{ item.settings.url }}">
+          <picture>
+            {% if item.settings.mo_image %}
+              <source media="(max-width: 768px)" srcset="{{ item.settings.mo_image | image_url }}">
+            {% endif %}
+            {% assign index = forloop.index | minus: 1 %}
+            <img
+              loading="lazy"
+              class="mk-object-cover mk-w-[288px] sm:mk-w-[168px] mk-rounded-[16px] mk-h-[{{img_height_arr[index]}}px] sm:mk-h-[{{ mo_img_height_arr[index] }}px]"
+              src="{{ item.settings.pc_image | image_url }}"
+              width="100%"
+              height="{{ img_height_arr[index] }}px">
+          </picture>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+
+</div>
+{% render 'mk_sec-com_margin' section: section %}
+
+{% schema %}
+  {
+    "name": "Image waterfall",
+    "tag": "section",
+    "class": "mk-image-waterfall",
+    "settings": [
+      {
+        "type": "select",
+        "id": "pc_margin_bottom",
+        "label": "PC端模块间距",
+        "info": "模块下间距",
+        "options": [
+          {
+            "value": "0px",
+            "label": "0px"
+          },
+          {
+            "value": "80px",
+            "label": "80px"
+          },
+          {
+            "value": "88px",
+            "label": "88px"
+          },
+          {
+            "value": "96px",
+            "label": "96px"
+          }, {
+            "value": "112px",
+            "label": "112px"
+          }, {
+            "value": "120px",
+            "label": "120px"
+          }, {
+            "value": "140px",
+            "label": "140px"
+          }, {
+            "value": "160px",
+            "label": "160px"
+          }, {
+            "value": "180px",
+            "label": "180px"
+          }, {
+            "value": "200px",
+            "label": "200px"
+          }, {
+            "value": "220px",
+            "label": "220px"
+          }
+        ],
+        "default": "120px"
+      }, {
+        "type": "text",
+        "id": "category_title",
+        "label": "标题",
+        "default": "ABS"
+      }, {
+        "type": "select",
+        "id": "mobile_margin_bottom",
+        "label": "mobile端模块间距",
+        "info": "模块下间距",
+        "options": [
+          {
+            "value": "0px",
+            "label": "0px"
+          },
+          {
+            "value": "40px",
+            "label": "40px"
+          },
+          {
+            "value": "48px",
+            "label": "48px"
+          },
+          {
+            "value": "56px",
+            "label": "56px"
+          }, {
+            "value": "64px",
+            "label": "64px"
+          }, {
+            "value": "72px",
+            "label": "72px"
+          }, {
+            "value": "80px",
+            "label": "80px"
+          }, {
+            "value": "88px",
+            "label": "88px"
+          }, {
+            "value": "96px",
+            "label": "96px"
+          }, {
+            "value": "112px",
+            "label": "112px"
+          }, {
+            "value": "120px",
+            "label": "120px"
+          }, {
+            "value": "140px",
+            "label": "140px"
+          }
+        ],
+        "default": "72px"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image_block",
+        "name": "图片",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "pc_image",
+            "label": "上传pc图片"
+          }, {
+            "type": "image_picker",
+            "id": "mo_image",
+            "label": "上传mo图片 PS：mo端只展示前8张图片"
+          }, {
+            "type": "url",
+            "label": "跳转链接",
+            "id": "url"
+          }
+        ],
+        "limit": 11
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image waterfall（图片瀑布流）",
+        "settings": {},
+        "blocks": [
+          {
+            "type": "image_block",
+            "settings": {
+              "pc_image": ""
+            }
+          }, {
+            "type": "image_block",
+            "settings": {
+              "pc_image": ""
+            }
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

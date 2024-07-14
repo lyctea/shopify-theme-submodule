@@ -1,0 +1,349 @@
+{% render 'mk_sec-com_margin', section: section %}
+{%- assign unique_id = '#shopify-section-' | append: section.id -%}
+{%- assign config = section.settings %}
+{%- assign blocks = section.blocks %}
+<style>
+  {{ unique_id }} .swiper-button-next:after, {{ unique_id }} .swiper-button-prev:after {
+      content: '';
+  }
+  {{ unique_id }} .slider-txt {
+    transition: all .25s ease-in-out;
+  }
+</style>
+
+<div class="mk-flex mk-flex-col mk-items-center mk-justify-center"
+  data-sidebar-title="{{ config.sidebar_title | escape }}"
+  data-second-nav-title="{{config.second_nav_title | escape }}"
+  id="{{config.second_nav_id | escape }}"
+>
+  <div class="mk-flex mk-flex-col mk-items-center mk-mb-[190px] mobile:mk-mb-[120px]">
+    {% comment %} <div class="mk-flex mk-flex-row mk-items-center mk-justify-center mk-text-orange-400 mk-text-[24px] mk-font-bold mk-mb-2">
+      {{ config.title }}
+    </div> {% endcomment %}
+    <div class="mk-flex mk-flex-row mk-items-center mk-justify-center mk-text-[40px] mk-text-center mk-font-bold mk-mb-[16px] mobile:mk-px-[15px] mobile:mk-mb-[16px] mobile:mk-text-[32px] mobile:mk-leading-[36px] mk-leading-[36px] ">
+      {{ config.Secondary_title }}
+    </div>
+    <div class="mk-flex mk-flex-row mk-items-center mk-justify-center mk-text-[14px] mobile:mk-text-[14px] mk-text-center mobile:mk-px-[15px] mk-max-w-[800px]">{{ config.content }}</div>
+    <a class="mk-justify-center mk-items-center mk-gap-1 mk-inline-flex mk-mt-[24px]" href="{{ config.url }}" {%- if config.new_Window -%}
+      target="_blank"
+    {%- endif -%}>
+      <div class="mk-text-center mk-text-blue-600 mk-text-sm mk-font-medium mk-leading-none">{{ config.urlTxt }}</div>
+      <div class="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+          <path d="M5.02292 1.96924C4.81171 2.21787 4.82996 2.58444 5.05671 2.8111L5.09424 2.84568L9.7564 6.80619L5.08847 10.8709C4.82949 11.0964 4.80236 11.4892 5.02788 11.7482C5.24152 11.9935 5.60527 12.0308 5.86317 11.8423L5.90513 11.8088L10.5731 7.74403C10.62 7.70314 10.6638 7.65877 10.7042 7.61131C11.134 7.10532 11.0887 6.35511 10.6123 5.904L10.5615 5.85842L5.89936 1.89792C5.63765 1.67559 5.24525 1.70752 5.02292 1.96924Z" fill="#0074FF"/>
+        </svg>
+      </div>
+    </a>
+  </div>
+  <div class="swiper-custom-container mk-relative mk-w-[534px] mobile:mk-w-[321px] mk-pr-[50px] mobile:mk-pr-[35px] mk-box-content">
+    <div class="swiper mk-overflow-visible ">
+      <div class="swiper-wrapper mk-ease-custom">
+        {% for block in blocks %}
+          <div class="swiper-slide mk-w-[218px] mobile:mk-w-[121px] mk-cursor-pointer">
+            <picture>
+              <source media="(max-width: 1024px)" srcset="{{ block.settings.mo_image }}">
+              <img
+                class="mk-w-[524px] mobile:mk-w-[121px] mk-top-[-135px] mk-left-[32px] mk-rounded-[8px]"
+                width="218"
+                height="auto"
+                src="{{ block.settings.pc_image }}"
+                alt=""
+              >
+            </picture>
+          </div>
+        {% endfor %}
+      </div>
+      <picture>
+        <source
+          media="(max-width: 1024px)"
+          srcset="https://cdn.shopify.com/s/files/1/0467/7985/9095/files/MO_05fc2ba5-0764-4a4d-848f-a8906564b015.png?v=1719300444"
+        >
+        <img
+          class="mk-w-[524px] mobile:mk-w-[321px] mk-absolute mk-top-[-140px] mk-left-[32px] mk-z-[7] mobile:mk-top-[-85px] mobile:mk-left-[18px]"
+          width="100%"
+          height="auto"
+          src="https://cdn.shopify.com/s/files/1/0467/7985/9095/files/PC_6102732e-b64e-4cba-a967-88ceb79b58fb.png?v=1719300445"
+          alt=""
+        >
+      </picture>
+    </div>
+    <div class="slider-txt mk-transition mk-duration-250 mk-ease-in-out mk-mt-[67px] mobile:mk-mt-[50px] mobile:mk-w-[223px] mk-w-[314px] mk-ml-[50px] mobile:mk-ml-[0px]">
+        <div class="mk-text-black mk-text-lg mk-font-bold mk-leading-[23px] mobile:mk-text-[19px] mk-mb-[8px]">Fabric</div>
+        <div class="mk-text-black mk-text-sm mk-font-medium mk-leading-[18px] mobile:mk-text-[14px]">Blade Cutting + Color Print</div>
+    </div>
+    <div class="swiper-button-prev swiper-button-container mk-right-[115px] mk-z-[6] mk-top-[300px] mk-left-[auto] mobile:mk-top-[188px] mobile:mk-right-[60px]">
+      <div class="arrow-left arrow-btn-box">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M20 37.5C29.665 37.5 37.5 29.665 37.5 20C37.5 10.335 29.665 2.5 20 2.5C10.335 2.5 2.5 10.335 2.5 20C2.5 29.665 10.335 37.5 20 37.5ZM24.1287 26.6287C24.324 26.8239 24.324 27.1405 24.1287 27.3358L23.0681 28.3964C22.8728 28.5917 22.5562 28.5917 22.361 28.3964L14.318 20.3535C14.1227 20.1582 14.1227 19.8416 14.318 19.6464L22.361 11.6034C22.5562 11.4081 22.8728 11.4081 23.0681 11.6034L24.1287 12.664C24.324 12.8593 24.324 13.1759 24.1287 13.3711L17.5 19.9999L24.1287 26.6287Z" fill="black" fill-opacity="0.9"/>
+        </svg>
+      </div>
+    </div>
+    <div class="swiper-button-next swiper-button-container mk-right-[55px] mk-z-[6] mk-top-[300px] mk-left-[auto] mobile:mk-top-[188px] mobile:mk-right-[10px]">
+      <div class="arrow-right arrow-btn-box">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M20 37.5C29.665 37.5 37.5 29.665 37.5 20C37.5 10.335 29.665 2.5 20 2.5C10.335 2.5 2.5 10.335 2.5 20C2.5 29.665 10.335 37.5 20 37.5ZM15.8713 13.3713C15.676 13.1761 15.676 12.8595 15.8713 12.6642L16.9319 11.6036C17.1272 11.4083 17.4438 11.4083 17.639 11.6036L25.682 19.6465C25.8773 19.8418 25.8773 20.1584 25.682 20.3536L17.639 28.3966C17.4438 28.5919 17.1272 28.5919 16.9319 28.3966L15.8713 27.336C15.676 27.1407 15.676 26.8241 15.8713 26.6289L22.5 20.0001L15.8713 13.3713Z" fill="black" fill-opacity="0.9"/>
+        </svg>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+{% comment %} <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_558976_5o8rjtuoiko.css"> {% endcomment %}
+{% comment %} <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> {% endcomment %}
+<script>
+    !function(){
+      
+        const swiperName = {{ unique_id |  json  }};
+        {% assign settings = section.blocks | map: 'settings' %}
+        {% assign titles = settings | map: 'title' |  json %}
+        {% assign content = settings | map: 'content' |  json %}
+        const $contentWrapper = $(`${swiperName}`).find(".slider-txt div");
+        const swiperTitles = {{ titles }};
+        const swiperContents = {{ content }};
+        const swiperInstance = new Swiper(`${swiperName} .swiper`, {
+            slidesPerView: 'auto',
+            spaceBetween: $(window).width() > 1024 ? 16 : 8,
+            centeredSlides: true,
+            slideToClickedSlide: true,
+            speed: 500,
+            loop: true,
+            navigation: {
+                nextEl: `${swiperName} .swiper-button-next`,
+                prevEl: `${swiperName} .swiper-button-prev`,
+            },
+            autoplay: false,
+            on: {
+                slideChangeTransitionStart: function (swiper) {
+                    const activeIndex = swiper.realIndex;
+                    $contentWrapper.parent().css({
+                      opacity: 0,
+                      // transform: 'translateY(-50px)'
+                    });
+                    setTimeout(() => {
+                      $contentWrapper.first().text(swiperTitles[activeIndex]);
+                      $contentWrapper.last().text(swiperContents[activeIndex]);
+                      $contentWrapper.parent().css({
+                        opacity: 1,
+                        // transform: 'translateY(0px)'
+                      });
+                    }, 300)
+                },
+            },
+        });
+    }()
+</script>
+{% schema %}
+{
+  "name": "Machine Swiper",
+  "tag": "section",
+  "class": "mk-product-machine-swiper",
+  "settings": [
+    {
+      "id": "Secondary_title",
+      "type": "richtext",
+      "label": "标题"
+    },
+    {
+      "id": "content",
+      "type": "richtext",
+      "label": "文案"
+    },
+    {
+      "id": "urlTxt",
+      "type": "text",
+      "label": "跳转链接文案",
+      "default": "View Material List"
+    },
+    {
+      "id": "url",
+      "type": "url",
+      "label": "跳转链接"
+    },
+    {
+      "id": "new_Window",
+      "type": "checkbox",
+      "label": "新页面打开",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "侧栏导航配置"
+    },
+    {
+      "id": "sidebar_title",
+      "type": "text",
+      "label": "侧栏导航标题"
+    },
+    {
+      "type": "header",
+      "content": "二级导航配置"
+    },
+    {
+      "id": "second_nav_title",
+      "type": "text",
+      "label": "二级导航标题"
+    },
+    {
+      "id": "second_nav_id",
+      "type": "text",
+      "label": "二级导航id"
+    },
+    {
+      "type": "select",
+      "id": "pc_margin_bottom",
+      "label": "PC端模块间距",
+      "info": "模块下间距",
+      "options": [
+        {
+          "value": "0px",
+          "label": "0px"
+        },
+        {
+          "value": "80px",
+          "label": "80px"
+        },
+        {
+          "value": "88px",
+          "label": "88px"
+        },
+        {
+          "value": "96px",
+          "label": "96px"
+        },
+        {
+          "value": "112px",
+          "label": "112px"
+        },
+        {
+          "value": "120px",
+          "label": "120px"
+        },
+        {
+          "value": "140px",
+          "label": "140px"
+        },
+        {
+          "value": "160px",
+          "label": "160px"
+        },
+        {
+          "value": "180px",
+          "label": "180px"
+        },
+        {
+          "value": "200px",
+          "label": "200px"
+        },
+        {
+          "value": "220px",
+          "label": "220px"
+        }
+      ],
+      "default": "120px"
+    },
+    {
+      "type": "select",
+      "id": "mobile_margin_bottom",
+      "label": "mobile端模块间距",
+      "info": "模块下间距",
+      "options": [
+        {
+          "value": "0px",
+          "label": "0px"
+        },
+        {
+          "value": "40px",
+          "label": "40px"
+        },
+        {
+          "value": "48px",
+          "label": "48px"
+        },
+        {
+          "value": "56px",
+          "label": "56px"
+        },
+        {
+          "value": "64px",
+          "label": "64px"
+        },
+        {
+          "value": "72px",
+          "label": "72px"
+        },
+        {
+          "value": "80px",
+          "label": "80px"
+        },
+        {
+          "value": "88px",
+          "label": "88px"
+        },
+        {
+          "value": "96px",
+          "label": "96px"
+        },
+        {
+          "value": "112px",
+          "label": "112px"
+        },
+        {
+          "value": "120px",
+          "label": "120px"
+        },
+        {
+          "value": "140px",
+          "label": "140px"
+        }
+      ],
+      "default": "72px"
+    },
+    {
+      "type": "checkbox",
+      "id": "isPd",
+      "label": "是否设置为内边距",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "图片",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Default Item Title",
+          "info": "图片标题"
+        },
+        {
+          "type": "text",
+          "id": "content",
+          "label": "图片内容",
+          "default": "Default Item Title",
+          "info": "图片内容"
+        },
+        {
+          "type": "text",
+          "id": "pc_image",
+          "label": "上传pc图片"
+        },
+        {
+          "type": "text",
+          "id": "mo_image",
+          "label": "上传mo图片"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Machine Swiper (机器轮播)",
+      "settings": {},
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}

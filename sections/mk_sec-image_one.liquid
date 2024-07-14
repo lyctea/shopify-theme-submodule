@@ -1,0 +1,182 @@
+{% comment %} 耗材页两张图片展示 {% endcomment %}
+{% liquid 
+  assign config = section.settings
+  assign pc_bg_image_default_width = 1200
+  assign pc_bg_image_default_height = 1200 | divided_by: section.settings.pc_bg_image.aspect_ratio | round: 2
+  
+  assign mobile_bg_image_default_width = 100
+  assign mobile_bg_image_default_height = mobile_bg_image_default_width | divided_by: section.settings.mobile_bg_image.aspect_ratio | round: 2
+  
+%}
+<div class="mk-flex mk-justify-center mk-items-center mk-flex-col sm:mk-items-start">
+    {% comment %} 标题 {% endcomment %}
+    <div class="mk-mb-12 mk-text-black mk-text-2xl mk-font-semibold mk-font-['Montserrat'] mk-leading-7 mk-text-[{{ config.title_color }}] mobile:mk-px-[16px] mobile:mk-text-left mobile:mk-mb-[22px]">
+      {{ config.title }}
+    </div>
+    <div class="mk-flex mk-items-center mk-flex-col mk-relative mk-z-10">
+      <div class="product-shelf-main mk-w-fit mk-h-fit mk-relative">
+        <picture >
+          <source srcset="{{ section.settings.pc_bg_image | image_url}}" media="(min-width: 1024px)">
+          <source srcset="{{ section.settings.mobile_bg_image | image_url}}" media="(max-width: 1024px)">
+          <img class="mobile:mk-hidden md:mk-block mk-max-w-none" loading="lazy" style="height:{{ pc_bg_image_default_height }}px;width:{{ pc_bg_image_default_width }}px" height="{{ pc_bg_image_default_height }}" width="{{ pc_bg_image_default_width }}" src="{{ section.settings.pc_bg_image | image_url}}" alt="{{ section.settings.pc_bg_image.alt }}">
+          <img class="mobile:mk-block md:mk-hidden mk-max-w-none" loading="lazy" style="height:{{ mobile_bg_image_default_height }}%;width:{{ mobile_bg_image_default_width }}%" height="{{ mobile_bg_image_default_height }}%" width="{{ mobile_bg_image_default_width }}%" src="{{ section.settings.mobile_bg_image | image_url}}" alt="{{ section.settings.mobile_bg_image.alt }}">
+        </picture>
+      </div>
+    </div>
+</div>
+{%  render 'mk_sec-com_margin' section: section %}
+
+
+{% schema %}
+    {
+      "name": "Image one",
+      "tag": "section",
+      "class": "mk-image-one",
+      "settings": [
+        {
+          "id": "title",
+          "type": "text",
+          "label": "标题",
+          "default": "Hear from Our Users"
+        },
+        {
+          "id": "title_color",
+          "type": "color",
+          "label": "标题的颜色",
+          "default": "#000"
+        },
+        {
+          "type": "image_picker",
+          "id": "pc_bg_image",
+          "label": "上传pc图片"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_bg_image",
+          "label": "上传mo图片"
+        },
+        {
+          "type": "url",
+          "label": "跳转链接",
+          "id": "url"
+        },
+        {
+      "type": "select",
+      "id": "pc_margin_bottom",
+      "label": "PC端模块间距",
+      "info": "模块下间距",
+      "options": [
+        {
+          "value": "0px",
+          "label": "0px"
+        },
+        {
+          "value": "80px",
+          "label": "80px"
+        },
+        {
+          "value": "88px",
+          "label": "88px"
+        },
+        {
+          "value": "96px",
+          "label": "96px"
+        },
+        {
+          "value": "112px",
+          "label": "112px"
+        },
+        {
+          "value": "120px",
+          "label": "120px"
+        },
+        {
+          "value": "140px",
+          "label": "140px"
+        },
+        {
+          "value": "160px",
+          "label": "160px"
+        },
+        {
+          "value": "180px",
+          "label": "180px"
+        },
+        {
+          "value": "200px",
+          "label": "200px"
+        },
+        {
+          "value": "220px",
+          "label": "220px"
+        }
+      ],
+      "default": "120px"
+    },
+    {
+      "type": "select",
+      "id": "mobile_margin_bottom",
+      "label": "mobile端模块间距",
+      "info": "模块下间距",
+      "options": [
+        {
+          "value": "0px",
+          "label": "0px"
+        },
+        {
+          "value": "40px",
+          "label": "40px"
+        },
+        {
+          "value": "48px",
+          "label": "48px"
+        },
+        {
+          "value": "56px",
+          "label": "56px"
+        },
+        {
+          "value": "64px",
+          "label": "64px"
+        },
+        {
+          "value": "72px",
+          "label": "72px"
+        },
+        {
+          "value": "80px",
+          "label": "80px"
+        },
+        {
+          "value": "88px",
+          "label": "88px"
+        },
+        {
+          "value": "96px",
+          "label": "96px"
+        },
+        {
+          "value": "112px",
+          "label": "112px"
+        },
+        {
+          "value": "120px",
+          "label": "120px"
+        },
+        {
+          "value": "140px",
+          "label": "140px"
+        }
+      ],
+      "default": "72px"
+    }
+      ],
+      "presets": [
+        {
+          "name": "Image one（一张图片）",
+          "settings": {},
+    
+        }
+      ]
+    }
+  {% endschema %}

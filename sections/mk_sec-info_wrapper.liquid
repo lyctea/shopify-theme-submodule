@@ -1,0 +1,455 @@
+<style>
+  .mk-info-wrapper .innovation-item.active .innovation-name {
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: 600;
+  }
+
+  .mk-info-wrapper .innovation-item.active .innovation-desc {
+    margin-top: 8px;
+    height: auto;
+  }
+
+  .mk-info-wrapper .innovation-item.active svg {
+    transform: rotate(180deg);
+  }
+
+  @media screen and (max-width: 1024px) {
+    .mk-info-wrapper .innovation-item.active .innovation-name {
+      font-size: 17px;
+      line-height: 21px;
+      font-weight: 500;
+    }
+    .mk-info-wrapper .innovation-item.active {
+      padding: 24px 16px;
+      gap: 0;
+    }
+    .mk-info-wrapper .innovation-item.active .innovation-inner-source {
+      display: block;
+    }
+    .mk-info-wrapper .innovation-item.active .innovation-desc {
+      margin-top: 16px;
+    }
+    .mk-info-wrapper .innovation-item.active svg {
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      flex: 0;
+    }
+  }
+</style>
+
+{%- assign config = section.settings -%}
+
+<section
+  class="md:mk-w-[1200px] mobile:mk-w-[calc(100%-32px)] mk-m-auto mk-text-center mk-info-wrapper"
+  data-sidebar-title="{{ config.sidebar_title | escape }}"
+  data-second-nav-title="{{config.second_nav_title | escape }}"
+  id="{{config.second_nav_id | escape }}"
+>
+  <div class="mk-text-center mk-text-black md:mk-text-[40px] mobile:mk-text-[32px] md:mk-leading-[44px] mobile:mk-leading-[36px] mk-font-[600] mk-text-[{{ config.title_color }}]">
+    {{ config.title }}
+  </div>
+  <div class="md:mk-mt-[48px] mobile:mk-mt-[40px] mk-flex mk-items-center md:mk-h-[600px] mobile:mk-h-[auto] md:mk-bg-[{{ config.content_area_bg_color }}] md:mk-rounded-[16px]">
+    {%- comment -%} 左边放资源 {%- endcomment -%}
+    <div class="md:mk-w-[600px] md:mk-h-[100%] md:mk-flex-none md:mk-relative mobile:mk-hidden innovation-source">
+      <a href="javascript:void(0)" class="jump"></a>
+      {%- comment -%} 图片 {%- endcomment -%}
+      <img
+        loading="lazy"
+        class="innovation-image mk-w-full mk-h-full mk-object-cover mk-rounded-tl-[16px] mk-rounded-bl-[16px] mk-hidden"
+        width="600"
+        height="600"
+      >
+      {%- comment -%} 视频 {%- endcomment -%}
+      {% render 'mk_sec-video_com', video_url: ''  video_class:'innovation-video mk-w-full mk-h-full mk-object-cover mk-rounded-tl-[16px] mk-rounded-bl-[16px] mk-hidden' %}
+    </div>
+
+    {%- comment -%} 右边放列表 {%- endcomment -%}
+    <div class="innovation-list md:mk-px-[48px] md:mk-pt-[32px] mk-h-full mk-overflow-auto">
+      {%- for block in section.blocks -%}
+        <div
+          class="
+            innovation-item mk-text-left md:mk-p-[24px] mobile:mk-p-[16px] md:mk-mt-[8px] mobile:mk-mt-[4px] mk-flex md:mk-gap-[40px] mobile:mk-gap-[28px] mk-justify-between mk-items-center mk-cursor-pointer
+            md:mk-rounded-[16px] first:mk-mt-[0] mk-bg-[{{ block.settings.innovation_bg }}]
+            mobile:first:mk-rounded-tl-[16px] mobile:first:mk-rounded-tr-[16px] mobile:last:mk-rounded-bl-[16px] mobile:last:mk-rounded-br-[16px]
+          "
+          data-innovation="{{ block.settings | json | escape }}"
+        >
+          <div>
+            <h3
+              class="innovation-name mk-text-[17px] mk-leading-[21px] mk-font-[500]"
+              style="color:{{ block.settings.innovation_name_color }}"
+            >
+              {{ block.settings.innovation_name }}
+            </h3>
+            <div
+              class="
+                innovation-inner-source mk-hidden mk-relative mobile:mk-mt-[16px] mobile:mk-w-full
+                mobile:mk-h-0 mobile:mk-pb-[100%]
+              "
+            >
+              <a href="javascript:void(0)" class="jump"></a>
+              {%- comment -%} 图片 {%- endcomment -%}
+              <img
+                loading="lazy"
+                class="innovation-image mk-rounded-[16px] mk-w-full mk-h-full mk-object-cover mk-absolute mk-top-0 mk-left-0"
+                width="600"
+                height="600"
+              >
+              {%- comment -%} 视频 {%- endcomment -%}
+              {% render 'mk_sec-video_com', video_url: ''  video_class:'innovation-video mk-rounded-[16px] mk-w-full mk-h-full mk-object-cover mk-absolute mk-top-0 mk-left-0' %}
+            </div>
+            <p
+              class="innovation-desc mk-transition-[height] mk-duration-[0.5s] mk-ease-linear mk-tracking-[0.1px] mk-h-0 mk-overflow-hidden mk-text-[14px] mk-leading-[21px] mk-font-[400]"
+              style="color:{{ block.settings.innovation_desc_color }}"
+            >
+              {{ block.settings.innovation_desc }}
+            </p>
+          </div>
+          <button class="mk-border-none mk-cursor-pointer mk-bg-none">
+            <svg
+              class="mk-w-[24px] mk-h-[24px] mk-flex-none"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.34151 8.24744C4.75715 7.88375 5.38891 7.92587 5.75259 8.34151L12 15.4814L18.2474 8.34151C18.6111 7.92587 19.2429 7.88375 19.6585 8.24744C20.0742 8.61112 20.1163 9.24288 19.7526 9.65852L13.1289 17.2285C12.5313 17.9115 11.4688 17.9115 10.8711 17.2285L4.24744 9.65852C3.88375 9.24288 3.92587 8.61112 4.34151 8.24744Z" fill="black"/>
+            </svg>
+          </button>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{% render 'mk_sec-com_margin', section: section %}
+{%- schema -%}
+{
+  "name": "Info Wrapper",
+  "class": "mk-info-wrappers-section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "标题",
+      "default": "leading by innovation"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "标题颜色",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "content_area_bg_color",
+      "label": "右侧文本区域背景颜色",
+      "default": "#FFF7EA"
+    },
+    {
+      "type": "header",
+      "content": "侧栏导航配置"
+    },
+    {
+      "id": "sidebar_title",
+      "type": "text",
+      "label": "侧栏导航标题"
+    },
+    {
+      "type": "header",
+      "content": "二级导航配置"
+    },
+    {
+      "id": "second_nav_title",
+      "type": "text",
+      "label": "二级导航标题"
+    },
+    {
+      "id": "second_nav_id",
+      "type": "text",
+      "label": "二级导航id"
+    },
+    {
+      "type": "select",
+      "id": "pc_margin_bottom",
+      "label": "PC端模块间距",
+      "info": "模块下间距",
+      "options": [
+        {
+          "value": "0px",
+          "label": "0px"
+        },
+        {
+          "value": "80px",
+          "label": "80px"
+        },
+        {
+          "value": "88px",
+          "label": "88px"
+        },
+        {
+          "value": "96px",
+          "label": "96px"
+        },
+        {
+          "value": "112px",
+          "label": "112px"
+        },
+        {
+          "value": "120px",
+          "label": "120px"
+        },
+        {
+          "value": "140px",
+          "label": "140px"
+        },
+        {
+          "value": "160px",
+          "label": "160px"
+        },
+        {
+          "value": "180px",
+          "label": "180px"
+        },
+        {
+          "value": "200px",
+          "label": "200px"
+        },
+        {
+          "value": "220px",
+          "label": "220px"
+        }
+      ],
+      "default": "120px"
+    },
+    {
+      "type": "select",
+      "id": "mobile_margin_bottom",
+      "label": "mobile端模块间距",
+      "info": "模块下间距",
+      "options": [
+        {
+          "value": "0px",
+          "label": "0px"
+        },
+        {
+          "value": "40px",
+          "label": "40px"
+        },
+        {
+          "value": "48px",
+          "label": "48px"
+        },
+        {
+          "value": "56px",
+          "label": "56px"
+        },
+        {
+          "value": "64px",
+          "label": "64px"
+        },
+        {
+          "value": "72px",
+          "label": "72px"
+        },
+        {
+          "value": "80px",
+          "label": "80px"
+        },
+        {
+          "value": "88px",
+          "label": "88px"
+        },
+        {
+          "value": "96px",
+          "label": "96px"
+        },
+        {
+          "value": "112px",
+          "label": "112px"
+        },
+        {
+          "value": "120px",
+          "label": "120px"
+        },
+        {
+          "value": "140px",
+          "label": "140px"
+        }
+      ],
+      "default": "72px"
+    },
+    {
+      "type": "checkbox",
+      "id": "isPd",
+      "label": "是否设置为内边距",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "innovation_item",
+      "name": "innovation Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "innovation_name",
+          "label": "innovation标题",
+          "default": "shape the future with 355 patents"
+        },
+        {
+          "type": "color",
+          "id": "innovation_name_color",
+          "label": "innovation标题颜色",
+          "default": "#000"
+        },
+        {
+          "type": "text",
+          "id": "innovation_desc",
+          "label": "innovation描述",
+          "default": "Driven by purpose, our pioneering move leads to positive change and sets higher standards in the laser industry."
+        },
+        {
+          "type": "color",
+          "id": "innovation_desc_color",
+          "label": "innovation描述颜色",
+          "default": "#000"
+        },
+        {
+          "type": "color",
+          "id": "innovation_bg",
+          "label": "innovation背景颜色",
+          "default": "#FFD157"
+        },
+        {
+          "type": "header",
+          "content": "资源配置"
+        },
+        {
+          "type": "select",
+          "id": "source_type",
+          "label": "资源类型",
+          "default": "image",
+          "options": [
+            {
+              "value": "image",
+              "label": "图片"
+            },
+            {
+              "value": "video",
+              "label": "视频"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "如果选择的是图片，则只需要配置以下图片，图片宽高比为1:1"
+        },
+        {
+          "type": "text",
+          "id": "image_pc",
+          "label": "innovation图片(PC)"
+        },
+        {
+          "type": "text",
+          "id": "image_ipad",
+          "label": "innovation图片(ipad)"
+        },
+        {
+          "type": "text",
+          "id": "image_h5",
+          "label": "innovation图片(h5)"
+        },
+        {
+          "type": "text",
+          "id": "image_alt",
+          "label": "Image Alt"
+        },
+        {
+          "type": "paragraph",
+          "content": "如果选择的是视频，则只需要配置以下视频，视频宽高比为1:1"
+        },
+        {
+          "type": "text",
+          "id": "video_pc",
+          "label": "innovation视频地址(pc)"
+        },
+        {
+          "type": "text",
+          "id": "video_ipad",
+          "label": "innovation视频地址(ipad)"
+        },
+        {
+          "type": "text",
+          "id": "video_h5",
+          "label": "innovation视频地址(h5)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Info Wrapper",
+      "settings": {},
+      "blocks": []
+    }
+  ]
+}
+{%- endschema -%}
+
+<script>
+  (function () {
+    $('.mk-info-wrapper .innovation-list').on('click', '.innovation-item', function () {
+      const $this = $(this);
+      if ($this.hasClass('active')) {
+        return;
+      }
+      $this.addClass('active').siblings().removeClass('active');
+      const jsonData = $this.attr('data-innovation') || '{}';
+      try {
+        const data = JSON.parse(jsonData);
+        setInnovationSource(data, $this);
+      } catch (error) {
+         console.error(error)
+      }
+    });
+
+    // 初始化第一个
+    $('.mk-info-wrapper .innovation-item').eq(0).click();
+
+    function setInnovationSource(innovationData, $innovationItem) {
+      const { image_alt, image_h5, image_ipad, image_pc, video_h5, video_ipad, video_pc, source_type } = innovationData;
+      let image_url, video_url, $image, $video;
+      const width = $(window).width();
+      if (width > 1024) {
+        image_url = image_pc;
+        video_url = video_pc;
+      } else if (width > 768) {
+        image_url = image_ipad;
+        video_url = video_ipad;
+      } else {
+        image_url = image_h5;
+        video_url = video_h5;
+      }
+
+      if (width > 1024) {
+        $image = $('.mk-info-wrapper .innovation-source').find('.innovation-image');
+        $video = $('.mk-info-wrapper .innovation-source').find('.innovation-video');
+      } else {
+        $image = $innovationItem.find('.innovation-image');
+        $video = $innovationItem.find('.innovation-video');
+      }
+
+      if (source_type == 'image') {
+        $video.hide();
+        $image.attr({ src: image_url, alt: image_alt }).show();
+      } else {
+        $image.hide();
+        $video.attr('src', video_url).show().get(0).play();
+      }
+    }
+  })();
+</script>

@@ -1,0 +1,34 @@
+<style>
+  .mk-dialog-container::backdrop {
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 1;
+  }
+</style>
+<dialog autofocus="false" class="mk-dialog-container mk-fixed mk-top-1/2 mk-z-[1000] mk-bg-transparent md:mk-w-[853px] md:mk-h-[504px] md:mk-mt-[-240px] mobile:mk-w-full mobile:mk-h-[244px] mobile:mk-mt-[-122px]">
+  <div class="mk-relative mk-z-[1001] mk-pt-6 mk-w-full mk-dialog-content">
+    <svg class="mk-close-btn mk-cursor-pointer mk-absolute mk-right-0 mk-top-0" xmlns="http://www.w3.org/2000/svg" width="16px" height="16.00px" viewBox="0 0 1024 1024"
+      version="1.1">
+      <path fill="#ffffff"
+        d="M780.309 839.716l-597.298-597.298 60.339-60.339 597.298 597.298-60.339 60.339zM243.412 840.144l-60.339-60.339 597.328-597.328 60.339 60.339-597.328 597.328z" />
+    </svg>
+    <video class="mk-w-full mk-outline-none video-box md:mk-h-[480px] mobile:mk-h-[220px]" controls="" src="{{ video_url }}"></video>
+  </div>
+</dialog>
+<script>
+  (function() {
+    const dialog = $('.mk-dialog-container')?.get(0);
+    function close() {
+      dialog?.close();
+    }
+    document.addEventListener('click', function(event) {
+      if (event.target.classList?.contains('mk-dialog-container')) {
+        close();
+      }
+    });
+    $('.mk-close-btn').click(close);
+    dialog.addEventListener('close', () => {
+      const video = $('.mk-dialog-container .video-box');
+      video.get(0)?.pause();
+    });
+  })();
+</script>

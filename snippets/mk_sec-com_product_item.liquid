@@ -1,0 +1,256 @@
+{%- liquid
+  assign current_countdown_config = product.metafields.makeblock.product_stock_countdown_config.value
+  assign productTitle = product.title | default: 'product title'
+  assign first_media = product.media[0]
+  assign productFristImg = first_media | img_url: 'medium'
+  assign collectionShowImg = productFristImg
+  assign link_url = product.url
+  assign wrapper_class = wrapper_class | default:'mk-w-56 mk-h-56 sm:mk-w-40'
+
+  if product_card_type == 'default'
+    assign collectionShowImg = product.metafields.custom.collection_show_img | default: productFristImg
+  endif
+
+  comment
+    商品价格处理
+  endcomment
+  assign current_variant = product.selected_or_first_available_variant
+  assign hasPriceVariants = false
+  assign productPrice = product.price
+  if product.price_min != product.price_max
+    assign hasPriceVariants = true
+    assign productPrice = product.price_min
+  endif
+  capture priceStr
+    if hasPriceVariants
+      echo '<i class="mk-not-italic mk-mr-1">From</i>'
+    endif
+    echo productPrice | money
+  endcapture
+-%}
+
+{% comment %} pc端加购按钮判断逻辑代码片段 {% endcomment %}
+{%- capture pc_quick_buy -%}
+  {%- if product.variants.size == 1 and current_variant.available -%}
+    {%- liquid
+      assign product_form_id = 'quick-add-' | append: section.id | append: product.id | append: '-quick-add-form_x'
+    -%}
+      <div class="mk-w-[122px] mk-h-7  mk-ml-[-61px] mk-left-[50%] mk-top-[165px] mk-absolute mk-z-30 mk-bg-[#D5F6DB] mk-rounded-2xl mk-box-border mk-opacity-0 group-hover/test:mk-opacity-100 sm:mk-hidden">
+          {%- form 'product', product, id: product_form_id,  novalidate: 'novalidate' -%}
+            <fieldset>
+              <input
+                type="hidden" 
+                name="id"
+                value="{{ current_variant.id }}">
+              <div class="submit" data-product-handle="{{ product.handle }}" data-js-product >
+                <button type="submit" class=" js-product-button-add-to-cart mk-w-[100%]" data-js-trigger-id="add-to-cart">
+                  <div class="mk-py-1.5 mk-text-zinc-900 mk-text-sm mk-font-medium mk-leading-none" >                   <span class="sm:mk-hidden"> {{ 'general.mk_sections.mk_sec-com_product_item.add_to_cart' | t  }}</span></div>
+                  <div class="mk-absolute mk-left-1.5 mk-top-1.5 mk-hidden sm:mk-block">{% render 'svg-cart-icon' %}</div>
+                </button>
+              </div>
+            </fieldset>
+          {%- endform -%}
+        </div>
+  {%- else -%}
+    <a class="mk-w-[122px] mk-h-7  mk-ml-[-61px] mk-left-[50%] mk-top-[165px] mk-absolute mk-z-30 mk-bg-[#D5F6DB] mk-rounded-2xl mk-justify-center mk-items-center  mk-inline-flex mk-box-border mk-opacity-0 group-hover/test:mk-opacity-100 sm:mk-hidden"
+      data-js-popup-button="quick-view" 
+      href="{{ link_url }}" 
+    >
+      <div class="mk-text-zinc-900 mk-text-sm mk-font-medium mk-leading-none" >
+        <span class="sm:mk-hidden"> {{ 'general.mk_sections.mk_sec-com_product_item.view_options' | t  }}</span>
+      </div>
+    </a>
+  {%- endif -%}
+{%- endcapture %}
+
+{% comment %} 移动端加购按钮判断逻辑代码片段 {% endcomment %}
+{%- capture mobile_quick_buy -%}
+  {%- if product.variants.size == 1 and current_variant.available -%}
+    {%- liquid
+      assign product_form_id = 'quick-add-' | append: section.id | append: product.id | append: '-quick-add-form_x'
+    -%}
+         <div
+         class=""
+         data-js-popup-button="quick-view" 
+       >
+          {%- form 'product', product, id: product_form_id,  novalidate: 'novalidate' -%}
+            <fieldset>
+              <input
+                type="hidden"
+                name="id"
+                value="{{ current_variant.id }}">
+              <div class="submit" data-product-handle="{{ product.handle }}" data-js-product >
+                <button type="submit" class=" js-product-button-add-to-cart" data-js-trigger-id="add-to-cart">
+                  <div class="mk-absolute mk-left-1.5 mk-top-1.5 mk-hidden sm:mk-block">{% render 'svg-cart-icon' %}</div>
+                  <div class="mk-absolute mk-left-1.5 mk-top-1.5 ">{% render 'svg-cart-icon' %}</div>
+      
+                </button>
+              </div>
+            </fieldset>
+          {%- endform -%}
+       </div>
+  
+  {%- else -%}
+      <a
+      class="mk-invisible sm:mk-visible"
+      data-js-popup-button="quick-view" 
+      href="{{ link_url }}" 
+    >
+        <div class="mk-absolute mk-left-1.5 mk-top-1.5 ">{% render 'svg-cart-icon' %}</div>
+    </a>
+  {%- endif -%}
+{%- endcapture %}
+
+<div
+  class="swiper-slide {{ wrapper_class }}  mk-bg-white mk-rounded-2xl mk-flex-col !mk-justify-start mk-items-start mk-box-border  mk-relative mk-cursor-pointer mk-group/test"
+>
+  <div class="mk-relative mk-w-full mk-pt-[100%] mk-rounded-tl-lg mk-rounded-tr-lg ">
+    <a
+      class="mk-w-full mk-h-full mk-left-0 mk-right-0 mk-top-0 mk-absolute mk-z-20 mk-bg-black mk-rounded-tl-lg mk-rounded-tr-lg mk-block  mk-opacity-0 hover:mk-opacity-20  sm:hover:mk-opacity-0"
+      href="{{link_url}}"
+      ></a>
+      {%- if pc_quick_buy -%}
+        {{ pc_quick_buy | replace: '-quick-add-form_x', '1' }}
+      {%- endif -%}
+      <img
+          class="mk-w-full mk-h-full mk-left-0 mk-right-0 mk-top-0 mk-absolute mk-z-10 mk-rounded-tl-lg mk-rounded-tr-lg "
+          src=" {{ collectionShowImg }}"
+          loading="lazy"
+        >
+  </div>
+  
+  
+
+  {% comment %} pc端 {% endcomment %}
+  <a href="{{link_url}}" class="mk-block sm:mk-hidden mk-border-dark-100 mk-mt-4" >
+    <div class="mk-px-4 mk-pb-6 mk-flex mk-justify-center mk-items-start  mk-text-black">
+
+      {%- if product_card_type == 'default' %}
+        <div class="mk-w-10 mk-h-10 mk-mr-[5px] mk-shrink-0">
+          <img loading="lazy"  width="100%" height="100%" src=" {{ productFristImg }}">
+        </div>
+
+      {%- endif -%}
+      <div class="mk-flex-col mk-justify-center mk-items-start  mk-inline-flex ">
+        <div class=" mk-text-zinc-900 mk-text-sm mk-font-medium mk-leading-[18px] mk-text-left mk-overflow-hidden mk-text-ellipsis mk-line-clamp-2 mk-min-h-[36px] hover:mk-underline">
+          {{ productTitle }}
+        </div>
+        <div class="mk-justify-start mk-items-center  mk-inline-flex mk-mt-[8px]">
+          <div class="mk-h-5 mk-justify-start mk-items-center mk-flex">
+            {%- liquid
+
+            -%}
+            {%- if current_variant.compare_at_price > current_variant.price -%}
+              <div class="mk-text-zinc-900 mk-text-base mk-font-bold mk-mr-[8px] mk-leading-[18px]">{{ priceStr }}</div>
+              {% unless hasPriceVariants %}
+                <div class="mk-text-neutral-500 mk-text-xs mk-font-medium  mk-line-through mk-leading-[18px]">
+                  {{ current_variant.compare_at_price | money }}
+                </div>
+              {% endunless %}
+            {% else %}
+              <div class="mk-text-zinc-900 mk-text-base mk-font-bold mk-leading-[18px]">{{ priceStr }}</div>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
+    
+       {% comment %} 库存倒计时 {% endcomment %}
+       {%- if product_card_type == 'deadline' and current_countdown_config != blank and current_countdown_config.enabled -%}
+          {% unless current_variant.inventory_quantity > current_countdown_config.min_trigger_quantity %}
+          <div class="mk-px-4 mk-pb-4 -mk-mt-2">
+              <stock-countdown
+              class="stock-countdown-range-wrap"
+              bar-bg-color="#F6F6F6"
+              bar-color="#28BE44"
+              total="{{- current_countdown_config.min_trigger_quantity -}}"
+              stock="{{- current_variant.inventory_quantity -}}"
+              tip="{{- current_countdown_config.text_with_quantity | replace: '#quantity', current_variant.inventory_quantity -}}"
+              tip-title="{{- current_countdown_config.text_with_quantity | replace: '#quantity', current_variant.inventory_quantity -}}"
+              tip-color="#959595"
+              pc-style=".stock-countdown-title { font-size: 12px; font-weight: normal; margin-top:8px;line-height: 14px}"
+              mobile-style=".stock-countdown-title { font-size: 11px;margin-top:0;display: none;}"
+              width="100%"
+              height="6"
+              mobileHeight="4"
+              direction="column"
+            ></stock-countdown>
+          
+          </div>
+          {% endunless %}
+      {%- endif -%}
+  </a>
+
+  {% comment %} 移动端 {% endcomment %}
+  <div class="mk-hidden sm:mk-block sm:mk-w-full">
+    {%- if product_card_type == 'default' %}
+      <a
+      class="mk-w-40  mk-px-3 mk-flex-col mk-justify-start mk-items-start  mk-inline-flex mk-text-black "
+      href="{{link_url}}"
+      >
+        <img loading="lazy" class="mk-w-10 mk-h-10 mk-mt-[5px]" src=" {{ productFristImg }}">
+    </a>
+    {%- endif -%}
+
+    <div class="mk-flex-col mk-justify-center mk-items-start  mk-flex mk-mt-[8px] mk-text-left mk-mb-4 mk-px-3">
+      <a
+        class="mk-text-zinc-900 mk-text-xs mk-font-medium  mk-leading-4  mk-overflow-hidden mk-text-ellipsis mk-line-clamp-2 mk-min-h-[24px] hover:mk-underline"
+        href="{{ link_url }}"
+      >
+        {{ productTitle }}
+      </a>
+      <div class="mk-flex mk-justify-between mk-items-center mk-min-h-[44px] mk-self-stretch">
+        <div class="mk-w-20  mk-text-left ">
+          {%- liquid
+
+          -%}
+          {%- if current_variant.compare_at_price > current_variant.price -%}
+            <div class="mk-text-zinc-900 mk-text-sm font-bold mk-flex-row mk-justify-center mk-items-start  mk-inline-flex">
+              {{ priceStr }}
+            </div>
+            {% unless hasPriceVariants %}
+              <div class="mk-text-neutral-500 mk-text-xs mk-font-medium  mk-line-through mk-leading-3">
+                {{ current_variant.compare_at_price | money }}
+              </div>
+            {% endunless %}
+          {% else %}
+            <div class="mk-text-zinc-900 mk-text-sm font-bold mk-flex-row mk-justify-center mk-items-start  mk-inline-flex">
+              {{ priceStr }}
+            </div>
+          {%- endif -%}
+        </div>
+        <div class="mk-relative mk-w-8 mk-h-8 mk-p-1.5 mk-bg-[#D5F6DB] mk-rounded-3xl mk-justify-center mk-items-center  mk-inline-flex">
+          {%- if mobile_quick_buy -%}
+            {{ mobile_quick_buy | replace: '-quick-add-form_x', '1' }}
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+
+      {% comment %} 库存倒计时 {% endcomment %}
+      {%- if product_card_type == 'deadline' and current_countdown_config != blank and current_countdown_config.enabled -%}
+        {% unless current_variant.inventory_quantity > current_countdown_config.min_trigger_quantity %}
+        <div class="mk-px-3 mk-pb-4">
+          <stock-countdown
+          class="stock-countdown-range-wrap"
+          bar-bg-color="#F6F6F6"
+          bar-color="#28BE44"
+          total="{{- current_countdown_config.min_trigger_quantity -}}"
+          stock="{{- current_variant.inventory_quantity -}}"
+          tip="{{- current_countdown_config.text_with_quantity | replace: '#quantity', current_variant.inventory_quantity -}}"
+          tip-title="{{- current_countdown_config.text_with_quantity | replace: '#quantity', current_variant.inventory_quantity -}}"
+          tip-color="#959595"
+          pc-style=".stock-countdown-title { font-size: 12px; font-weight: normal; margin-top:8px;line-height: 14px}"
+          mobile-style=".stock-countdown-title { margin-top:0;color:#959595}"
+          width="100%"
+          height="6"
+          mobileHeight="6"
+          direction="column"
+        ></stock-countdown>
+        </div>
+        {% endunless %}
+    
+      {%- endif -%}
+  </div>
+</div>
+

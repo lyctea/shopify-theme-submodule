@@ -1,0 +1,27 @@
+<div class="md:mk-w-[222px] mk-rounded-[8px] mk-p-[16px] mk-bg-white mk-cursor-pointer accessory-item
+   {% if is_active %} active {% endif %}  mobile:mk-relative
+  "
+   data-accessory-item = "{{ data | json | escape }}"
+>
+  <div class="mk-text-left mk-text-black mk-text-[14px] mk-font-[500] mk-leading-[18px]">
+    {{ data.accessory_name }}
+  </div>
+  <div class="mk-w-full mk-mt-[16px] mobile:mk-my-[8px]">
+    <picture class="lozad">
+      <source
+        media="(max-width: 1024px)"
+        srcset="{{ data.accessory_small_image_h5 }}"
+      >
+      <img
+        loading="lazy"
+        src="{{ data.accessory_small_image }}"
+        alt="{{ data.image_alt }}"
+        class="mk-w-full mk-h-auto mk-object-scale-down"
+      >
+    </picture>
+  </div>
+  <div class="md:mk-hidden mobile:mk-h-[24px] mobile:mk-w-full"></div>
+  <svg class="md:mk-hidden mobile:mk-absolute mobile:mk-right-[8px] mobile:mk-bottom-[8px]" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M24 8C28.4183 12.4183 28.4183 19.5817 24 24C19.5817 28.4183 12.4183 28.4183 8 24C3.58172 19.5817 3.58172 12.4183 8 8C12.4183 3.58172 19.5817 3.58172 24 8ZM22.8 9.19941C19.0445 5.44388 12.9555 5.44388 9.2 9.19941C5.44446 12.9549 5.44446 19.0439 9.2 22.7994C12.9555 26.5549 19.0445 26.5549 22.8 22.7994C26.5555 19.0439 26.5555 12.9549 22.8 9.19941ZM21.6484 16.0001C21.6484 16.4687 21.2685 16.8486 20.7999 16.8486H16.8477V20.808C16.8477 21.2766 16.4678 21.6565 15.9991 21.6565C15.5305 21.6565 15.1506 21.2766 15.1506 20.808V16.8486H11.1833C10.7146 16.8486 10.3347 16.4687 10.3347 16.0001C10.3347 15.5315 10.7146 15.1516 11.1833 15.1516L15.1506 15.1516L15.1506 11.1913C15.1506 10.7227 15.5305 10.3428 15.9991 10.3428C16.4678 10.3428 16.8477 10.7227 16.8477 11.1913L16.8477 15.1516L20.7999 15.1516C21.2685 15.1516 21.6484 15.5315 21.6484 16.0001Z" fill="black"/>
+  </svg>
+</div>

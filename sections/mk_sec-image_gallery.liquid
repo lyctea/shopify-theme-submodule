@@ -1,0 +1,289 @@
+{%- assign config = section.settings -%}
+{%- assign unique_id = '#shopify-section-' | append: section.id -%}
+<style>
+  {{ unique_id }}.mk-image-galley {
+    background-color: {{ config.section_bg_color }};
+  }
+  @media (max-width: 1024px) {
+    {{ unique_id }} .gallery-list::-webkit-scrollbar{
+      display:none;
+    }
+  } 
+  {% if config.image_is_play %}
+    {{ unique_id }}.mk-image-galley .gallery-list{
+      animation: {{ section.id }}_move {{ config.image_play_time }}s linear 1s infinite normal none;
+      width: fit-content;
+    }
+    @keyframes {{ section.id }}_move {
+        0% {
+            transform: translateX(0px);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+    {{ unique_id }}.mk-image-galley .gallery-list:hover {
+      animation-play-state: paused;
+    }
+  {% endif %}
+</style>
+<section class="{% if config.image_is_play %}mk-w-full{% else %}md:mk-w-[1200px] mobile:mk-w-full{% endif %} 
+  mk-m-auto mk-text-center mobile:mk-px-[16px]
+  {% unless config.image_is_play %}mobile:mk-px-0{% endunless %}">
+  {% comment %} 标题 {% endcomment %}
+  <div class="mobile:mk-text-left mk-text-black mk-text-2xl mk-font-semibold mk-font-['Montserrat'] mk-leading-7 mk-text-[{{ config.title_color }}]
+    {% unless config.image_is_play %}mobile:mk-px-[16px]{% endunless %}">
+    {{ config.title }}
+  </div>
+  {% comment %} 描述 {% endcomment %}
+  {%- if config.desc  -%}
+  <div class="mobile:mk-text-left md:mk-w-[630px] mk-text-[14px] mk-mt-[8px] mk-mx-auto mk-font-[500px] mk-font-['Montserrat'] mk-leading-[18px] mk-text-[{{ config.desc_color }}]
+    {% unless config.image_is_play %}mobile:mk-px-[16px]{% endunless %}">
+    {{ config.desc }}
+  </div>
+{%- endif -%}
+  <div class="mk-flex md:mk-gap-[16px] mobile:mk-gap-[8px] md:mk-mt-[48px] mobile:mk-mt-[22px] gallery-list 
+    {% unless config.image_is_play %}md:mk-flex-wrap mobile:mk-flex-nowrap mobile:mk-overflow-x-auto mobile:mk-px-[16px]{% endunless %}">
+    {%- for block in section.blocks -%}
+      <div class="gallery-item mk-rounded-[16px] 
+        {% if config.image_is_play %}
+            mk-flex-shrink-0 mk-flex-grow-0 md:mk-w-[{{ config.image_pc_width }}px] mobile:mk-w-[{{ config.image_h5_width }}px]
+          {% else %}
+            md:mk-flex-1 mobile:mk-flex-shrink-0 mobile:mk-flex-grow-0 mobile:mk-w-[{{ config.image_h5_width }}px]
+        {% endif %}">
+        <picture class="lozad">
+          <source media="(max-width: 1024px)" srcset="{{ block.settings.h5_image | img_url: 'master' }}">
+          <img
+            loading="lazy"
+            src="{{ block.settings.pc_image | img_url: 'master' }}"
+            alt="{{ block.settings.image_alt }}"
+            class="gallery-image mk-rounded-lg mk-w-full"
+          >
+        </picture>
+      </div>
+    {%- endfor -%}
+  </div>
+</section>
+{% render 'mk_sec-com_margin' section:section %}
+{% schema %}
+{
+  "name": "Image Gallery",
+  "class": "mk-image-galley",
+  "tag": "section",
+  "settings": [
+    {
+      "id": "title",
+      "type": "text",
+      "label": "标题",
+      "default": "Hear from Our Users"
+    },
+    {
+      "id": "title_color",
+      "type": "color",
+      "label": "标题的颜色",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "组件的背景颜色",
+      "default": "#f8f9fd"
+    },
+    {
+      "id": "desc",
+      "type": "textarea",
+      "label": "描述(按需配置)"
+    },
+    {
+      "id": "desc_color",
+      "type": "color",
+      "label": "描述的颜色(按需配置)",
+      "default": "#7D827D"
+    },
+    {
+      "type": "number",
+      "id": "image_pc_width",
+      "label": "图片的宽度（PC）",
+      "default": 288
+    },
+    {
+      "type": "number",
+      "id": "image_h5_width",
+      "label": "图片的宽度（h5）",
+      "default": 312
+    },
+    {
+      "type": "checkbox",
+      "id": "image_is_play",
+      "label": "图片是否轮播",
+      "default": true
+    },
+    {
+      "type": "number",
+      "id": "image_play_time",
+      "label": "轮播时长(单位秒)",
+      "default": 60
+    },
+    {
+      "type": "select",
+      "id": "pc_margin_bottom",
+      "label": "PC端模块间距",
+      "info": "模块下间距",
+      "options": [
+        {
+          "value": "0px",
+          "label": "0px"
+        },
+        {
+          "value": "80px",
+          "label": "80px"
+        },
+        {
+          "value": "88px",
+          "label": "88px"
+        },
+        {
+          "value": "96px",
+          "label": "96px"
+        },
+        {
+          "value": "112px",
+          "label": "112px"
+        },
+        {
+          "value": "120px",
+          "label": "120px"
+        },
+        {
+          "value": "140px",
+          "label": "140px"
+        },
+        {
+          "value": "160px",
+          "label": "160px"
+        },
+        {
+          "value": "180px",
+          "label": "180px"
+        },
+        {
+          "value": "200px",
+          "label": "200px"
+        },
+        {
+          "value": "220px",
+          "label": "220px"
+        }
+      ],
+      "default": "120px"
+    },
+    {
+      "type": "select",
+      "id": "mobile_margin_bottom",
+      "label": "mobile端模块间距",
+      "info": "模块下间距",
+      "options": [
+        {
+          "value": "0px",
+          "label": "0px"
+        },
+        {
+          "value": "40px",
+          "label": "40px"
+        },
+        {
+          "value": "48px",
+          "label": "48px"
+        },
+        {
+          "value": "56px",
+          "label": "56px"
+        },
+        {
+          "value": "64px",
+          "label": "64px"
+        },
+        {
+          "value": "72px",
+          "label": "72px"
+        },
+        {
+          "value": "80px",
+          "label": "80px"
+        },
+        {
+          "value": "88px",
+          "label": "88px"
+        },
+        {
+          "value": "96px",
+          "label": "96px"
+        },
+        {
+          "value": "112px",
+          "label": "112px"
+        },
+        {
+          "value": "120px",
+          "label": "120px"
+        },
+        {
+          "value": "140px",
+          "label": "140px"
+        }
+      ],
+      "default": "72px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "gallery_item",
+      "name": "GalleryItem",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "pc_image",
+          "label": "gallery图片(PC)"
+        },
+        {
+          "type": "image_picker",
+          "id": "h5_image",
+          "label": "gallery图片(h5)"
+        },
+        {
+          "type": "text",
+          "id": "image_alt",
+          "label": "Image Alt"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Gallery",
+      "settings": {},
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+  (function ($) {
+    /* 组件-走马灯*/
+    const $mkImageGallery = $(document.currentScript).closest('.mk-image-galley'),
+     $galleryList = $mkImageGallery.find('.gallery-list');
+    const isPC = $(window).width() > 1024;
+
+    const image_is_play = {{ config.image_is_play }} ;
+    if(image_is_play){
+      createMoreSlide(); // 创建更多的slide
+    }
+
+    function createMoreSlide() {
+      const sliderChildren = $galleryList.children();
+      $galleryList.append(sliderChildren.clone()).append(sliderChildren.clone()).append(sliderChildren.clone());
+    }
+  })(jQueryTheme);
+</script>

@@ -1,0 +1,18 @@
+{% comment %} {%- assign first_video = video_url.sources | last -%}
+{%- assign video_url = first_video.url -%}
+{%- assign video_type = first_video.mime_type -%} {% endcomment %}
+
+<video
+  class="{{video_class}}"
+  width="100%"
+  loop
+  autoplay
+  playsinline
+  muted
+  src="{{ video_url }}"
+>
+</video>
+
+
+
+

@@ -1,0 +1,1485 @@
+{
+    "sections": {
+      "main": {
+        "type": "main-product",
+        "blocks": {
+          "b0febcf2-a38c-4ae7-a929-10af2ad0e5f4": {
+            "type": "tab_custom",
+            "settings": {
+              "title": "ADDITIONAL",
+              "content": "",
+              "page_content": ""
+            }
+          },
+          "959240db-9a88-436b-8c09-b6c9e0ebb7a8": {
+            "type": "tab_custom",
+            "settings": {
+              "title": "CUSTOM TAB",
+              "content": "",
+              "page_content": ""
+            }
+          }
+        },
+        "block_order": [
+          "b0febcf2-a38c-4ae7-a929-10af2ad0e5f4",
+          "959240db-9a88-436b-8c09-b6c9e0ebb7a8"
+        ],
+        "settings": {
+          "gallery_size": "6",
+          "sidebar": "off",
+          "enable_sticky_sidebar": true,
+          "show_tabs": false,
+          "show_tab_description": true,
+          "show_tab_reviews": true,
+          "scrolling_to_opened_tab": false,
+          "tabs_type": "tabs",
+          "show_save_price_label": true
+        }
+      },
+      "mk_sec_simple_video_banner_Qdc9BQ": {
+        "type": "mk_sec-simple_video_banner",
+        "settings": {
+          "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/74b96dbb2d19db9758ba306fc55ad040_b5855426-5f7b-4703-9030-01b0b2779c1e.jpg",
+          "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/11a1b561ce8875ff3ea87ad883173728.jpg",
+          "product_title": "xTool M1 Ultra",
+          "product_dec": "Your Best Craft & DIY Center",
+          "video_title": "Watch Video",
+          "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/2857fdb110ce426a992c8bca9fed4094.mp4",
+          "pc-bg": "#FFF7EB",
+          "sidebar_title": "",
+          "second_nav_title": "Overview",
+          "second_nav_id": "banner",
+          "pc_margin_bottom": "32px",
+          "mobile_margin_bottom": "40px",
+          "isPd": false
+        }
+      },
+      "mk_sec_message_bar_one_TjQbhe": {
+        "type": "mk_sec-message_bar_one",
+        "disabled": true,
+        "settings": {
+          "text_1": "Upgrade to xTool M1 Ultra and save big",
+          "text_2": "Elevate your crafting experience now!",
+          "text_3": "Get a trade-up estimate",
+          "url": "shopify:\/\/pages\/trade-up",
+          "new_Window": true,
+          "sidebar_title": "",
+          "second_nav_title": "",
+          "second_nav_id": "",
+          "pc_margin_bottom": "120px",
+          "mobile_margin_bottom": "96px",
+          "isPd": false
+        }
+      },
+      "mk_sec-modal-a": {
+        "type": "mk_sec-modal",
+        "settings": {
+        }
+      },
+      "mk_sec_hobbyists_playground_BLryd6": {
+        "type": "mk_sec-hobbyists_playground",
+        "settings": {
+          "text_1": "Features You'll Love",
+          "text_2": "Laser, Blade, Pen, Inkjet",
+          "text_3": "4-in-1 Versatile Craft Machine",
+          "text_4": "Multiple Devices Support",
+          "text_5": "Smart Software, Easy for All",
+          "text_6": "Smart Multitasking",
+          "text_7": "Seamless Print-to-cut in One Go",
+          "text_8": "Ready-to-make Projects",
+          "text_9": "Materials Supported",
+          "text_10": "Worry-free for Home Use",
+          "pc_image1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Laser_Blade_Pen_Inkjet_a7b3c119-4609-434d-ac29-c2067585b749.jpg",
+          "pc_image2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-90.jpg",
+          "pc_image3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-82.jpg",
+          "mo_image1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Laser_Blade_Pen_Inkjet_90ea81cd-88da-477b-b765-e95196db40f0.jpg",
+          "mo_image2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/mo_521ada0e-8ff2-45d3-bee1-5c7d387df8a0.jpg",
+          "mo_image3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-75.jpg",
+          "sidebar_title": "",
+          "second_nav_title": "",
+          "second_nav_id": "",
+          "pc_margin_bottom": "120px",
+          "mobile_margin_bottom": "96px",
+          "isPd": false
+        }
+      },
+      "mk_sec-modal_four_cards_Laxt8y": {
+        "type": "mk_sec-modal_four_cards",
+        "blocks": {
+          "card_item_t7BY7B": {
+            "type": "card_item",
+            "settings": {
+              "card_title": "Laser Mode",
+              "card_desc": "Diode Laser for Engraving and Cutting",
+              "card_icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Laser_Mode_229b84e2-cc36-427f-bec3-de7702540dc4.jpg",
+              "card_icon_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-61.jpg",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-65.jpg",
+              "h5_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-60.jpg",
+              "image_alt": "",
+              "modal_id": "modal-1",
+              "modal_title": "",
+              "modal_bg_color": "#ffffff",
+              "modal_no_header": false,
+              "modal_title_style": "",
+              "modal_header_style": "",
+              "modal_header_border_style": "",
+              "modal_title_h5_style": "",
+              "modal_header_h5_style": "",
+              "modal_header_border_h5_style": "",
+              "modal_width": 980
+            }
+          },
+          "card_item_9hMFHK": {
+            "type": "card_item",
+            "settings": {
+              "card_title": "Blade Mode",
+              "card_desc": "Versatile Tools for Cutting and Foiling",
+              "card_icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-Blade_Mode.jpg",
+              "card_icon_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-Blade_Mode.jpg",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-34.jpg",
+              "h5_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-33.jpg",
+              "image_alt": "",
+              "modal_id": "modal-2",
+              "modal_title": "",
+              "modal_bg_color": "#ffffff",
+              "modal_no_header": false,
+              "modal_title_style": "",
+              "modal_header_style": "",
+              "modal_header_border_style": "",
+              "modal_title_h5_style": "",
+              "modal_header_h5_style": "",
+              "modal_header_border_h5_style": "",
+              "modal_width": 980
+            }
+          },
+          "card_item_hTpzcQ": {
+            "type": "card_item",
+            "settings": {
+              "card_title": "Inkjet Mode",
+              "card_desc": "Vivid Ink for Rich Color Printing",
+              "card_icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Inkjet_Mode_818ae241-fdf9-436f-b8ce-8196d7b2be09.jpg",
+              "card_icon_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-56.jpg",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-58.jpg",
+              "h5_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-55.jpg",
+              "image_alt": "",
+              "modal_id": "modal-3",
+              "modal_title": "",
+              "modal_bg_color": "#ffffff",
+              "modal_no_header": false,
+              "modal_title_style": "",
+              "modal_header_style": "",
+              "modal_header_border_style": "",
+              "modal_title_h5_style": "",
+              "modal_header_h5_style": "",
+              "modal_header_border_h5_style": "",
+              "modal_width": 980
+            }
+          },
+          "card_item_MpRzmA": {
+            "type": "card_item",
+            "settings": {
+              "card_title": "Pen Mode",
+              "card_desc": "Various Pens for Auto Drawing and Writing",
+              "card_icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Pen_Mode_68aa3b6e-66cb-4e9c-8166-7140ad2f9f4e.jpg",
+              "card_icon_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Pen_Mode_5bd42415-f6da-43ab-be70-01b751bc78c3.jpg",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-80.jpg",
+              "h5_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-73.jpg",
+              "image_alt": "",
+              "modal_id": "modal-4",
+              "modal_title": "",
+              "modal_bg_color": "#ffffff",
+              "modal_no_header": false,
+              "modal_title_style": "",
+              "modal_header_style": "",
+              "modal_header_border_style": "",
+              "modal_title_h5_style": "",
+              "modal_header_h5_style": "",
+              "modal_header_border_h5_style": "",
+              "modal_width": 980
+            }
+          }
+        },
+        "block_order": [
+          "card_item_t7BY7B",
+          "card_item_9hMFHK",
+          "card_item_hTpzcQ",
+          "card_item_MpRzmA"
+        ],
+        "settings": {
+          "title": "The Ultimate 4-in-1 Craft & DIY Machine",
+          "title_color": "",
+          "desc": "It's a laser machine, a die cutting machine, a printer, and a drawing robot. A one-stop studio that meets almost all crafting needs. You can do pretty much anything with a single device!",
+          "desc_color": "",
+          "section_bg_color": "#f8f9fd",
+          "sidebar_title": "4-in-1 Combos",
+          "second_nav_title": "",
+          "second_nav_id": "",
+          "pc_margin_bottom": "180px",
+          "mobile_margin_bottom": "120px",
+          "isPd": true
+        }
+      },
+      "mk_sec_modal_four_cards_content_modal1_aHb6ke": {
+        "type": "mk_sec-modal_four_cards-content_modal1",
+        "blocks": {
+          "five_img_card_item_YHBrfr": {
+            "type": "five_img_card_item",
+            "settings": {
+              "pc_five_img1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-67_b8a95e74-6399-40e4-9431-c23e8eefa8e1.jpg",
+              "mo_five_img1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Laser_module_1_d2689579-e046-4b6f-8fb9-7f174d07eae5.jpg",
+              "five_img1_text": "Acrylic Nametags",
+              "pc_five_img2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-68.jpg",
+              "mo_five_img2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-62.jpg",
+              "five_img2_text": "Personalized Tumbler",
+              "pc_five_img3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-71_3200284f-dfe6-4a83-9ec7-384b8027c8e1.jpg",
+              "mo_five_img3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Laser_module_3_73a3f461-9ce5-486a-a526-3c9c48a5d149.jpg",
+              "five_img3_text": "Cutting Board",
+              "pc_five_img4": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-69.jpg",
+              "five_img4_text": "Wall Art",
+              "pc_five_img5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-70.jpg",
+              "five_img5_text": "Engraved Leather"
+            }
+          }
+        },
+        "block_order": [
+          "five_img_card_item_YHBrfr"
+        ],
+        "settings": {
+          "text_1": "Laser Mode",
+          "text_2": "Diode Laser for Engraving and Cutting",
+          "pc_video1": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/da875fa4c0a744fdb838a31ad2a1fe6a.mp4",
+          "mo_video1": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f28bad3b336c42579cb552884ce3aad9.mp4",
+          "video2_text_1": "Slice Through Materials Like Butter",
+          "video2_text_2": "Switchable laser head up to 20W. Effortlessly slice through materials up to 10mm thick in one smooth pass.",
+          "pc_video2": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/718ab2487f0648659a0c57aa3ebde357.mp4",
+          "mo_video2": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/bb9aa1a9ce9c42bc8aa69fa747913e5d.mp4",
+          "img1_text_1": "Ultra Fine Precision",
+          "img1_text_2": "Focused down to a tiny dot, laser precision is sharper than you can imagine, achieving at the micron level - all your details are captured perfectly.",
+          "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Ultra_Fine_Precision_d77de0d1-d8b5-4b3e-8e06-035ec337ed2d.jpg",
+          "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Ultra_Fine_Precision_a771bf4d-f3bf-4602-8343-b04a797e93d3.jpg",
+          "video3_text_1": "Rotary Engraving for Versatile Creations",
+          "video3_text_2": "RA2 Pro lets you engrave on just about anything round or curved. Party favors, sports gear, you name it - turn everyday items into seriously cool, custom creations.",
+          "pc_video3": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/417bdc3936fc4c8487cbdcc275def6d8.mp4",
+          "mo_video3": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7ced8f833f1342e99f7d6ca71972279c.mp4"
+        }
+      },
+      "mk_sec_modal_four_cards_content_modal2_3EXGtc": {
+        "type": "mk_sec-modal_four_cards-content_modal2",
+        "blocks": {
+          "four_img_card_item_fNTDF8": {
+            "type": "four_img_card_item",
+            "settings": {
+              "card_type": "type1",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Fine-Point_Blade_660517b0-233d-45bf-b761-b201b82214bc.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Fine-Point_Blade_8b74c877-e0ca-4884-96a8-1df09d1932ce.jpg",
+              "product_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Fine-Point_Blade_0b6dea63-c5b0-4c42-99a3-a5712acdf12c.jpg",
+              "card_text1": "Fine-point Blade",
+              "card_text2": "Premium delicate cutting for 1.5mm paper, stickers, vinyl and more",
+              "url": "",
+              "new_Window": false,
+              "url_text": "Learn More"
+            }
+          },
+          "four_img_card_item_7P6BDD": {
+            "type": "four_img_card_item",
+            "settings": {
+              "card_type": "deadline",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-43.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-40.jpg",
+              "product_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Cutting_Blade_63b8c1ec-d2cb-4214-bca2-247bcbeaf3c1.jpg",
+              "card_text1": "Cutting Blade",
+              "card_text2": "Power through thick materials up to 2.5mm, ideal for leather, matboard, and even balsa wood",
+              "url": "",
+              "new_Window": true,
+              "url_text": "Learn More"
+            }
+          },
+          "four_img_card_item_mNRpdr": {
+            "type": "four_img_card_item",
+            "settings": {
+              "card_type": "type1",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Rotary_Blade_e86837b8-df4b-4517-8bb0-a352171004a3.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Rotary_Blade_576de8ec-301f-4167-af88-aacaacee3de4.jpg",
+              "product_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Rotary_Blade_7ff19ea9-b7ae-4d6d-951c-4cf5d371ed1a.jpg",
+              "card_text1": "Rotary Blade (Add on)",
+              "card_text2": "Glides through fabrics like denim, cotton, and linen",
+              "url": "https:\/\/www.xtool.com\/products\/xtool-m1-ultra-rotary-blade",
+              "new_Window": true,
+              "url_text": "Learn More"
+            }
+          },
+          "four_img_card_item_PbJwCg": {
+            "type": "four_img_card_item",
+            "settings": {
+              "card_type": "deadline",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Foil_Transfer_Tip_58c232a9-56e5-4385-ba7e-2475e52f9568.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Foil_Transfer_Tip_002d9df1-a0dd-4c0a-9283-3a9f6efdaf5f.jpg",
+              "product_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Foil_Transfer_Tip_d3c8b048-e59e-4458-9b88-5f8a9cd04a4b.jpg",
+              "card_text1": "Foil Transfer Tip (Add on)",
+              "card_text2": "Create stunning foil accents or add elegant debossing to paper, cardstock, leather and more",
+              "url": "https:\/\/www.xtool.com\/products\/xtool-m1-ultra-foil-transfer-tip",
+              "new_Window": true,
+              "url_text": "Learn More"
+            }
+          }
+        },
+        "block_order": [
+          "four_img_card_item_fNTDF8",
+          "four_img_card_item_7P6BDD",
+          "four_img_card_item_mNRpdr",
+          "four_img_card_item_PbJwCg"
+        ],
+        "settings": {
+          "text_1": "Blade Mode",
+          "text_2": "Versatile Tools for Cutting and Foiling",
+          "pc_video1": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/0fb50e3e4ecb4110bc9543019132352d.mp4",
+          "mo_video1": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/cee5f6bea3044c4fa2f6e04f04761d06.mp4",
+          "video2_text_1": "Maximize Material Usage, No Waste",
+          "video2_text_2": "M1 Ultra has your back with its revolutionary Pin-point Positioning™️ tech, which is 10 times more accurate than single-camera systems. Now you can tackle even the most delicate crafting tasks with total ease.",
+          "pc_video2": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6b14af8bcc5046258fd5d25400ecb178.mp4",
+          "mo_video2": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7164623cba6342c3a19ed299051b5142.mp4"
+        }
+      },
+      "mk_sec_modal_four_cards_content_modal3_i8bqGy": {
+        "type": "mk_sec-modal_four_cards-content_modal3",
+        "blocks": {
+          "five_img_card_item_x9Hzqf": {
+            "type": "five_img_card_item",
+            "settings": {
+              "pc_five_img1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-36_3db12799-5a38-43d5-9b72-3c61a7153183.jpg",
+              "mo_five_img1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Brush_module_1_f6608f7d-1f12-4f04-b9b3-5eade7490a97.jpg",
+              "five_img1_text": "DIY Calendar",
+              "pc_five_img2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-38_b179daf1-81a2-4da4-92c9-6e7a66bd1bb2.jpg",
+              "mo_five_img2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-36.jpg",
+              "five_img2_text": "Fridge Magnets",
+              "pc_five_img3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-39_beb8a994-3e3d-44d4-89e0-98dce2495750.jpg",
+              "mo_five_img3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-37.jpg",
+              "five_img3_text": "Printed Bags",
+              "pc_five_img4": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-37_98a038e1-9bb0-4b61-85ae-e4d684a605ea.jpg",
+              "five_img4_text": "Profile Card",
+              "pc_five_img5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-40_dc605db6-c610-436a-8ae2-d523dca94a8b.jpg",
+              "five_img5_text": "Photo Rock Slate"
+            }
+          }
+        },
+        "block_order": [
+          "five_img_card_item_x9Hzqf"
+        ],
+        "settings": {
+          "text_1": "Inkjet module (Add on)",
+          "text_2": "Vivid Ink for Colorful Printing",
+          "pc_video1": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/95d366e6fb1343048e6441894fd618aa.mp4",
+          "mo_video1": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/52677224693a4aebbfd121bd3c43a627.mp4",
+          "video2_text_1": "Print on More Materials",
+          "video2_text_2": "Open up a whole new world of possibilities! It's simple to express your artistic vision on unconventional media like wood, clay, coated stone, fabric, and more.",
+          "pc_video2": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/723ba4d147cf4c99a0b15c2ae923a2e5.mp4",
+          "mo_video2": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6f12de3d3a614f7b8b727f7abad20651.mp4",
+          "img1_text_1": "Rich Colors to Pop Your Work",
+          "img1_text_2": "With CMY ink technology, we create stunningly colorful prints, enhancing the vibrancy of your creations.",
+          "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/pc-multicolor-m1_ultra_injeck_module.jpg",
+          "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/mo-multicolor-m1_ultra_injeck_module.jpg"
+        }
+      },
+      "mk_sec_modal_four_cards_content_modal4_NtenU9": {
+        "type": "mk_sec-modal_four_cards-content_modal4",
+        "blocks": {
+          "five_img_card_item_HmQywT": {
+            "type": "five_img_card_item",
+            "settings": {
+              "pc_five_img1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-61_636ca3e6-c10d-4b2e-8497-fa3de68a0cb3.jpg",
+              "mo_five_img1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-57.jpg",
+              "five_img1_text": "Greeting Cards",
+              "pc_five_img2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Knife_cutting_module_5.jpg",
+              "mo_five_img2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Knife_cutting_module_2_48868ca3-b565-4853-a000-3893e34c3d4e.jpg",
+              "five_img2_text": "Art Piece",
+              "pc_five_img3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-63_1f2c963b-cff1-499f-8d26-1f749c386e98.jpg",
+              "mo_five_img3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-59.jpg",
+              "five_img3_text": "Various Fonts",
+              "pc_five_img4": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-62_1fc68752-5491-41b9-b4b0-9581b1d26a7a.jpg",
+              "five_img4_text": "Gift Tags",
+              "pc_five_img5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/wedding_card.jpg",
+              "five_img5_text": "Wedding Card"
+            }
+          }
+        },
+        "block_order": [
+          "five_img_card_item_HmQywT"
+        ],
+        "settings": {
+          "text_1": "Pen Mode",
+          "text_2": "Various Pens for Auto Drawing & Writing",
+          "pc_video1": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/0343f02916be4889a52acefb5f5b3e9d.mp4",
+          "mo_video1": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/af6e4a0493e945c9ace35785d0a588e9.mp4",
+          "video2_text_1": "Express with Greater Flexibility",
+          "video2_text_2": "Enjoy the drawing pens which are capable of precise strokes, smooth fills, and a wide range of customization options, as long as they fit the pen holder.",
+          "pc_video2": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/11cd199b30e94fb29892dbddfa60576e.mp4",
+          "mo_video2": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/09d15c8c3c6841759160af6d5d865468.mp4"
+        }
+      },
+      "mk_sec-three_cards_a": {
+        "type": "mk_sec-three_cards",
+        "blocks": {
+          "card_item_t7BY71": {
+            "type": "card_item",
+            "settings": {
+              "card_title": "Colorize Your Laser World",
+              "card_desc": "Stand out with stunning multicolor designs that go beyond the basic engraving and cuts of traditional laser machines.",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-41_74081c71-f21a-45cb-8c22-b8d7d7d8e1d4.jpg",
+              "h5_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-38.jpg",
+              "image_alt": ""
+            }
+          },
+          "card_item_9hMFH1": {
+            "type": "card_item",
+            "settings": {
+              "card_title": "Mixed-media with Ease",
+              "card_desc": "M1 Ultra excels at cutting, drawing, and foiling as well as printing and engraving like a dream! Perfect for mixed-media, perfect for art.",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Mixed-media_with_Ease_46567360-9f3e-42f4-a9c5-47ae5baf9a4c.jpg",
+              "h5_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Mixed-media_with_Ease_482dd3f7-77ec-4f78-8488-6aaf51ebfd97.jpg",
+              "image_alt": ""
+            }
+          },
+          "card_item_hTpzc1": {
+            "type": "card_item",
+            "settings": {
+              "card_title": "Ink Beyond Paper",
+              "card_desc": "From wood to clay, leather, and stone, we are redefining the boundaries of inkjet printing- thick and hard materials are no longer a limitation.",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Ink_Beyond_Paper_4f72ea5d-ccc6-4da8-b8cb-6f2b21edd1bc.jpg",
+              "h5_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Ink_Beyond_Paper_ae1707ff-3b37-4b03-9359-2d740c88d445.jpg",
+              "image_alt": ""
+            }
+          }
+        },
+        "block_order": [
+          "card_item_t7BY71",
+          "card_item_9hMFH1",
+          "card_item_hTpzc1"
+        ],
+        "settings": {
+          "title": "Smart Combos, Simple Success",
+          "title_color": "#000000",
+          "desc": "3 seconds is all you need to switch processes with Easy Swap™ Design. No more jumping to devices - get your work done with ultimate efficiency and precision.",
+          "desc_color": "#000000",
+          "pc_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/fa732eda16944b3889d0b6aa8f453014.mp4",
+          "mo_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c4edc3bf124f4811907c368c2a6d50fe.mp4",
+          "section_bg_color": "#f8f9fd",
+          "sidebar_title": "",
+          "second_nav_title": "",
+          "second_nav_id": "",
+          "pc_margin_bottom": "180px",
+          "mobile_margin_bottom": "120px",
+          "isPd": true
+        }
+      },
+      "mk_sec_two_cards_dXjzcp": {
+        "type": "mk_sec-two_cards",
+        "blocks": {
+          "item_XJpCeK": {
+            "type": "item",
+            "settings": {
+              "title": "Learn Once, Master All",
+              "content": "Forget the frustration of using multiple machines. With xTool powerful software, everything is a breeze. Just set it up and go!",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Easy_control_no_hassle_646db3f3-e0a8-4c3e-9595-897b3fe2fe98.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Easy_control_no_hassle_173a6fc0-1855-423a-9704-bbe14537645c.jpg"
+            }
+          },
+          "item_CggC4C": {
+            "type": "item",
+            "settings": {
+              "title": "Space Saving, No Clutter",
+              "content": "Say bye bye to redundant devices and welcome the compact design, M1 Ultra perfectly provides efficiency and a clean workspace.",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Space_saving_no_clutter_18fc9339-b8b9-4fed-8bb6-a7ac5ab3b937.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Space_saving_no_clutter_b8ca8991-5c45-4201-9d1f-169495c6beff.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "item_XJpCeK",
+          "item_CggC4C"
+        ],
+        "custom_css": [
+          "{background-color: #f8f9fd;}"
+        ],
+        "settings": {
+          "sidebar_title": "",
+          "second_nav_title": "",
+          "second_nav_id": "",
+          "pc_margin_bottom": "180px",
+          "mobile_margin_bottom": "120px",
+          "isPd": true
+        }
+      },
+      "mk_sec_machine_swiper_Bn4DrP": {
+        "type": "mk_sec-machine_swiper",
+        "blocks": {
+          "item_GXz7YV": {
+            "type": "item",
+            "settings": {
+              "title": "Wood",
+              "content": "Laser Engraving, Laser Cutting",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-10_9057b7fb-7ff8-4da7-ba29-bf0b397b8a26.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-10_b993de71-3cb5-4b8a-a3e1-7eea3dadd0aa.jpg"
+            }
+          },
+          "item_URkdcr": {
+            "type": "item",
+            "settings": {
+              "title": "Vinyl",
+              "content": "Fine-point Cutting",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-11.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-11.jpg"
+            }
+          },
+          "item_cLVApY": {
+            "type": "item",
+            "settings": {
+              "title": "Paper",
+              "content": "Inkjet Printing, Fine-point Cutting",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-12.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-12.jpg"
+            }
+          },
+          "item_FJfCet": {
+            "type": "item",
+            "settings": {
+              "title": "Leather",
+              "content": "Foiling, Deep Cutting",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-13.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-13.jpg"
+            }
+          },
+          "item_nWD3iN": {
+            "type": "item",
+            "settings": {
+              "title": "Acrylic",
+              "content": "Laser Cutting",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-14.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-14.jpg"
+            }
+          },
+          "item_xQ8YJr": {
+            "type": "item",
+            "settings": {
+              "title": "Coated Glass",
+              "content": "Laser Engraving with Rotary Accessory",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-15.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-15.jpg"
+            }
+          },
+          "item_XdbN9A": {
+            "type": "item",
+            "settings": {
+              "title": "Ceramic",
+              "content": "Pen Drawing with Porcelain Markers",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-16.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-16.jpg"
+            }
+          },
+          "item_DPq6L6": {
+            "type": "item",
+            "settings": {
+              "title": "Felt",
+              "content": "Deep Cutting",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-17.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-17.jpg"
+            }
+          },
+          "item_NtebrW": {
+            "type": "item",
+            "settings": {
+              "title": "Stain Steel",
+              "content": "Laser Engraving",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-18.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-18.jpg"
+            }
+          },
+          "item_i4UD6e": {
+            "type": "item",
+            "settings": {
+              "title": "Rock",
+              "content": "Ink Printing, Laser Engraving",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-19.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-19.jpg"
+            }
+          },
+          "item_z86DLr": {
+            "type": "item",
+            "settings": {
+              "title": "Fabric",
+              "content": "Rotary Cutting",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-20.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-20.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "item_GXz7YV",
+          "item_URkdcr",
+          "item_cLVApY",
+          "item_FJfCet",
+          "item_nWD3iN",
+          "item_xQ8YJr",
+          "item_XdbN9A",
+          "item_DPq6L6",
+          "item_NtebrW",
+          "item_i4UD6e",
+          "item_z86DLr"
+        ],
+        "custom_css": [
+          "{background-color: #f8f9fd;}"
+        ],
+        "settings": {
+          "Secondary_title": "<p>Perfectly Support 1000+ Materials<\/p>",
+          "content": "<p>From soft to hard, thin to thick, and flat to 3D curved surfaces, it's designed to meet all your everyday crafting needs. Let your imagination run wild and M1 Ultra is ready to make it happen.<\/p>",
+          "urlTxt": "Various Materials",
+          "url": "https:\/\/support.xtool.com\/article\/1542",
+          "new_Window": true,
+          "sidebar_title": "Materials",
+          "second_nav_title": "",
+          "second_nav_id": "",
+          "pc_margin_bottom": "180px",
+          "mobile_margin_bottom": "120px",
+          "isPd": true
+        }
+      },
+      "mk_sec_one_card_gPCdTA": {
+        "type": "mk_sec-one_card",
+        "custom_css": [
+          "{background-color: #f8f9fd;}"
+        ],
+        "settings": {
+          "text_1": "All Results Are Satisfied",
+          "text_2": "Less mess, more masterpieces! Every cut, shape, and detail is flawless. No more frustrating mistakes or wasted materials. Craft like a pro in no time!",
+          "text_3": "Join Group for Real Feedback",
+          "url": "https:\/\/www.facebook.com\/groups\/xtoolm1",
+          "new_Window": true,
+          "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-21.jpg",
+          "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-21.jpg",
+          "sidebar_title": "",
+          "second_nav_title": "FB Group",
+          "second_nav_id": "FB-Group",
+          "pc_margin_bottom": "180px",
+          "mobile_margin_bottom": "120px",
+          "isPd": true
+        }
+      },
+      "mk_sec_four_cards_VGmbx7": {
+        "type": "mk_sec-four_cards",
+        "blocks": {
+          "card_item_iGtAiG": {
+            "type": "card_item",
+            "settings": {
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Home_Decor_ef08264b-8579-4079-97eb-65c68474fe87.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-52.jpg",
+              "card_title": "Home Decor",
+              "card_desc": "Different ways to style your sweet home"
+            }
+          },
+          "card_item_xMjY8i": {
+            "type": "card_item",
+            "settings": {
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Party_Events_4f89f7c7-8b4e-42ab-bb01-ec0eca987acd.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-72.jpg",
+              "card_title": "Party & Events",
+              "card_desc": "Wow your guests with special items"
+            }
+          },
+          "card_item_x7pxHq": {
+            "type": "card_item",
+            "settings": {
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-52.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-49.jpg",
+              "card_title": "Gift Making",
+              "card_desc": "Make heartfelt gifts they will treasure"
+            }
+          },
+          "card_item_NjFctH": {
+            "type": "card_item",
+            "settings": {
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-89.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-82.jpg",
+              "card_title": "Money Making",
+              "card_desc": "Turn your passion into profits and earn more"
+            }
+          }
+        },
+        "block_order": [
+          "card_item_iGtAiG",
+          "card_item_xMjY8i",
+          "card_item_x7pxHq",
+          "card_item_NjFctH"
+        ],
+        "custom_css": [
+          "{background-color: #f8f9fd;}"
+        ],
+        "settings": {
+          "top_title": "Your Smart Choice for Year-Round Crafting",
+          "sidebar_title": "",
+          "second_nav_title": "",
+          "second_nav_id": "",
+          "pc_margin_bottom": "120px",
+          "mobile_margin_bottom": "96px",
+          "isPd": true
+        }
+      },
+      "mk_sec_products_hover_play_xE8yLr": {
+        "type": "mk_sec-products_hover_play",
+        "blocks": {
+          "item_mQk8dp": {
+            "type": "item",
+            "settings": {
+              "title": "Choose the module",
+              "content": "place the materials you're gonna craft and install the module",
+              "pc_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d50eb7b8e171490d85ed2ce21dab289e.mp4",
+              "mo_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/520ea188108c4720adb8a5e3ce386fbb.mp4"
+            }
+          },
+          "item_qq3j6f": {
+            "type": "item",
+            "settings": {
+              "title": "Choose pattern and processing",
+              "content": "Get inspired or create your own patterns, select the corresponding processing mode or combination processing",
+              "pc_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/dd764b699d34463989dd499ba27f2d67.mp4",
+              "mo_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/bbb1e0b41bb4425991896e56485434ef.mp4"
+            }
+          },
+          "item_VEpg9p": {
+            "type": "item",
+            "settings": {
+              "title": "Press to start and done",
+              "content": "Switch your module according to the guide if necessary",
+              "pc_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/9f3d407f9cc34188896cf1afcb2426a9.mp4",
+              "mo_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/54dbac91e8674b359cda31ca9b6537f6.mp4"
+            }
+          }
+        },
+        "block_order": [
+          "item_mQk8dp",
+          "item_qq3j6f",
+          "item_VEpg9p"
+        ],
+        "settings": {
+          "title": "<p>Craft with Confidence, Easy for All<\/p>",
+          "content": "<p>We put your experience first. While our machine boasts numerous functions, it remains incredibly easy to use. Anyone can be a creative genius with this user-friendly machine.<\/p>",
+          "sidebar_title": "Easy to Use",
+          "second_nav_title": "",
+          "second_nav_id": "",
+          "pc_margin_bottom": "180px",
+          "mobile_margin_bottom": "120px",
+          "isPd": false
+        }
+      },
+      "mk_sec_one_video_card_9tBkMM": {
+        "type": "mk_sec-one_video_card",
+        "settings": {
+          "text_1": "Snap It, Preview It",
+          "text_2": "Snap pics on your phone, poof! They're in the app, ready to edit. See exactly what you're working with and total precision for amazing edits.",
+          "pc_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/293f365d19b447c1915245e9b739adca.mp4",
+          "mo_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/31c3005cedac48fe8a0bfa85f13dfd52.mp4",
+          "sidebar_title": "",
+          "second_nav_title": "",
+          "second_nav_id": "",
+          "pc_margin_bottom": "180px",
+          "mobile_margin_bottom": "120px",
+          "isPd": false
+        }
+      },
+      "mk_sec-info_wrapper_a": {
+        "type": "mk_sec-info_wrapper",
+        "blocks": {
+          "innovation_item_xbwfx1": {
+            "type": "innovation_item",
+            "settings": {
+              "innovation_name": "Multitasking in One Go",
+              "innovation_name_color": "#000000",
+              "innovation_desc": "It effortlessly juggles multiple processes across multiple functions, streamlining your workflow in one setup.",
+              "innovation_desc_color": "#000000",
+              "innovation_bg": "#ffd157",
+              "source_type": "video",
+              "image_pc": "",
+              "image_ipad": "",
+              "image_h5": "",
+              "image_alt": "",
+              "video_pc": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/99c805ab2aa347d78f7b3211543f5531.mp4",
+              "video_ipad": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/99c805ab2aa347d78f7b3211543f5531.mp4",
+              "video_h5": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/99c805ab2aa347d78f7b3211543f5531.mp4"
+            }
+          },
+          "innovation_item_Rn3xQ2": {
+            "type": "innovation_item",
+            "settings": {
+              "innovation_name": "Material EasySet™ Library",
+              "innovation_name_color": "#000000",
+              "innovation_desc": "One-click to set optimal parameters, no more testing and wasting materials to get the desired engraving results.",
+              "innovation_desc_color": "#000000",
+              "innovation_bg": "#ffd157",
+              "source_type": "video",
+              "image_pc": "",
+              "image_ipad": "",
+              "image_h5": "",
+              "image_alt": "",
+              "video_pc": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a381270a00a948559420787fe41c511e.mp4",
+              "video_ipad": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a381270a00a948559420787fe41c511e.mp4",
+              "video_h5": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a381270a00a948559420787fe41c511e.mp4"
+            }
+          },
+          "innovation_item_GargA3": {
+            "type": "innovation_item",
+            "settings": {
+              "innovation_name": "Versatile Editing with Ease",
+              "innovation_name_color": "#000000",
+              "innovation_desc": "All patterns and lines are in your control. Redraw, rewrite, remix... your imagination is the only limit.",
+              "innovation_desc_color": "#000000",
+              "innovation_bg": "#ffd157",
+              "source_type": "video",
+              "image_pc": "",
+              "image_ipad": "",
+              "image_h5": "",
+              "image_alt": "",
+              "video_pc": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/857d1a48fab44861b6944d7470277572.mp4",
+              "video_ipad": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/857d1a48fab44861b6944d7470277572.mp4",
+              "video_h5": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/857d1a48fab44861b6944d7470277572.mp4"
+            }
+          },
+          "innovation_item_kKeb14": {
+            "type": "innovation_item",
+            "settings": {
+              "innovation_name": "AI Helps to Create",
+              "innovation_name_color": "#000000",
+              "innovation_desc": "With just a few words, AI can generate laser-ready designs, offering over 10 style options.",
+              "innovation_desc_color": "#000000",
+              "innovation_bg": "#ffd157",
+              "source_type": "video",
+              "image_pc": "",
+              "image_ipad": "",
+              "image_h5": "",
+              "image_alt": "",
+              "video_pc": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f73c4bf5914b475ba2d422cd7b805243.mp4",
+              "video_ipad": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f73c4bf5914b475ba2d422cd7b805243.mp4",
+              "video_h5": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f73c4bf5914b475ba2d422cd7b805243.mp4"
+            }
+          }
+        },
+        "block_order": [
+          "innovation_item_xbwfx1",
+          "innovation_item_Rn3xQ2",
+          "innovation_item_GargA3",
+          "innovation_item_kKeb14"
+        ],
+        "settings": {
+          "title": "Strongest Software Helps Shine",
+          "title_color": "#000000",
+          "content_area_bg_color": "#fff7ea",
+          "sidebar_title": "Software",
+          "second_nav_title": "",
+          "second_nav_id": "",
+          "pc_margin_bottom": "120px",
+          "mobile_margin_bottom": "72px",
+          "isPd": false
+        }
+      },
+      "mk_sec_simple_banner_4GFfF7": {
+        "type": "mk_sec-simple_banner",
+        "settings": {
+          "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/20240709-143905.jpg",
+          "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-87.jpg",
+          "url": "https:\/\/www.designfind.com\/",
+          "button_text": "Get Inspired Now",
+          "text_two": "5000+ Projects to Spark Your Imagination",
+          "sidebar_title": "",
+          "second_nav_title": "",
+          "second_nav_id": "",
+          "pc_margin_bottom": "120px",
+          "mobile_margin_bottom": "120px",
+          "isPd": false
+        }
+      },
+      "mk_sec-modal_three_cards_dxndKp": {
+        "type": "mk_sec-modal_three_cards",
+        "blocks": {
+          "card_item_t7BY71": {
+            "type": "card_item",
+            "settings": {
+              "card_title": "Thoughtful Design",
+              "card_desc": "We Enhanced Every Detail for Your Enjoyment",
+              "card_bg": "#aeb5b6",
+              "modal_id": "modal-5",
+              "modal_title": "",
+              "modal_bg_color": "#ffffff",
+              "modal_no_header": false,
+              "modal_title_style": "",
+              "modal_header_style": "",
+              "modal_header_border_style": "",
+              "modal_title_h5_style": "",
+              "modal_header_h5_style": "",
+              "modal_header_border_h5_style": "",
+              "modal_width": 980
+            }
+          },
+          "card_item_9hMFH2": {
+            "type": "card_item",
+            "settings": {
+              "card_title": "Enclosed Class 1 Laser Safety",
+              "card_desc": "Your Safety, Our Priority",
+              "card_bg": "#cfbeab",
+              "modal_id": "modal-6",
+              "modal_title": "",
+              "modal_bg_color": "#ffffff",
+              "modal_no_header": false,
+              "modal_title_style": "",
+              "modal_header_style": "",
+              "modal_header_border_style": "",
+              "modal_title_h5_style": "",
+              "modal_header_h5_style": "",
+              "modal_header_border_h5_style": "",
+              "modal_width": 980
+            }
+          },
+          "card_item_hTpzc3": {
+            "type": "card_item",
+            "settings": {
+              "card_title": "xTool Craft Family",
+              "card_desc": "One-Stop Solution for All Your Crafting Needs",
+              "card_bg": "#d4d3d9",
+              "modal_id": "modal-7",
+              "modal_title": "",
+              "modal_bg_color": "#f8f9fd",
+              "modal_no_header": false,
+              "modal_title_style": "",
+              "modal_header_style": "",
+              "modal_header_border_style": "",
+              "modal_title_h5_style": "",
+              "modal_header_h5_style": "",
+              "modal_header_border_h5_style": "",
+              "modal_width": 1328
+            }
+          }
+        },
+        "block_order": [
+          "card_item_t7BY71",
+          "card_item_9hMFH2",
+          "card_item_hTpzc3"
+        ],
+        "settings": {
+          "title": "Details for Your Best Experience",
+          "title_color": "#000000",
+          "desc": "We believe that every detail counts. That's why we've built our product with the utmost care and precision. Inside, you'll discover a world of thoughtful design and exceptional performance.",
+          "desc_color": "#000000",
+          "section_bg_color": "#ffffff",
+          "sidebar_title": "",
+          "second_nav_title": "",
+          "second_nav_id": "",
+          "pc_margin_bottom": "180px",
+          "mobile_margin_bottom": "120px",
+          "isPd": false
+        }
+      },
+      "mk_sec-modal_three_cards-content_modal1_a": {
+        "type": "mk_sec-modal_three_cards-content_modal1",
+        "blocks": {
+          "item_A93byV": {
+            "type": "item",
+            "settings": {
+              "title": "Reduce Screw Disassembly Steps",
+              "content": "We reduce screw usage and upgrade to the clips designs for effortless assembly and module replacement.",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Reduce_Screw_Disassembly_Steps_0cc74923-1a69-4147-8159-61f90cdf474e.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Reduce_Screw_Disassembly_Steps_af8b54f9-1fda-472c-9f73-911abb0ac51d.jpg"
+            }
+          },
+          "item_cGnPBe": {
+            "type": "item",
+            "settings": {
+              "title": "Smart Ink Cap Placement",
+              "content": "Never worry about dried-up ink again. The inkjet module automatically seals itself after each job, keeping your ink fresh and your printer ready for action!",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Hidden_Gas_Path_Design_1aa79973-a1a6-445f-9b11-d50e214d7015.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Hidden_Gas_Path_Design_1561b418-5ecd-4e41-bf15-23f73ed6ffd8.jpg"
+            }
+          },
+          "item_9RWKRQ": {
+            "type": "item",
+            "settings": {
+              "title": "Extra Storage, Keep Tools Handy",
+              "content": "Keep your essentials tools and materials handy and organized with our hidden storage space conveniently on the riser base.",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Extra_Storage_Keep_Tools_Handy_a11ef5d7-880c-41cc-b105-269b7141a687.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Extra_Storage_Keep_Tools_Handy_361e77b7-df8d-4cf5-b938-c91ca19c013d.jpg"
+            }
+          },
+          "text_GPGpkE": {
+            "type": "text",
+            "settings": {
+              "title": "6,500 times",
+              "content": "of power stability tests"
+            }
+          },
+          "text_HUiKxC": {
+            "type": "text",
+            "settings": {
+              "title": "720 hours",
+              "content": "of laser aging tests"
+            }
+          },
+          "text_eEbyRG": {
+            "type": "text",
+            "settings": {
+              "title": "7,300 times",
+              "content": "of module swap stability test"
+            }
+          },
+          "text_q83Wwk": {
+            "type": "text",
+            "settings": {
+              "title": "176,000 times",
+              "content": "of blade tools lifting cycle test"
+            }
+          },
+          "text_C4yQGB": {
+            "type": "text",
+            "settings": {
+              "title": "1,600 hours",
+              "content": "of extreme environmental tests (5 conditions with 10 prototype machines)"
+            }
+          },
+          "text_zryeTR": {
+            "type": "text",
+            "settings": {
+              "title": "30+ rounds",
+              "content": "of reliability tests (drop tests, impact test, vibration test, etc.)"
+            }
+          }
+        },
+        "block_order": [
+          "item_A93byV",
+          "item_cGnPBe",
+          "item_9RWKRQ",
+          "text_GPGpkE",
+          "text_HUiKxC",
+          "text_eEbyRG",
+          "text_q83Wwk",
+          "text_C4yQGB",
+          "text_zryeTR"
+        ],
+        "settings": {
+          "small_title": "Thoughtful Design",
+          "title": "We Enhanced Every Detail for Your Enjoyment",
+          "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Thoughtful_Design_3eab2666-e097-41ff-80c2-d9388d2dba40.jpg",
+          "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Thoughtful_Design_b57fafcf-3523-4eb4-a7f1-5e2ce1b35477.jpg",
+          "footer_title": "High Quality Ensured by Professional Testing.",
+          "footer_txt": "Rigorously tested for uncompromising quality and longevity. Your peace of mind is our top priority, ensuring a worry-free creative experience every time."
+        }
+      },
+      "mk_sec-modal_three_cards-content_modal2_a": {
+        "type": "mk_sec-modal_three_cards-content_modal2",
+        "blocks": {
+          "item_4Dgmhr": {
+            "type": "item",
+            "settings": {
+              "title": "Lid-open Stop to Avoid Danger",
+              "content": "If the machine is moved, struck, or the machine cover is opened during operation, the machine will automatically stop.",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Lid-open_Stop_to_Avoid_Danger_f4fbe3c9-eef7-4e5d-b076-1fef2af41584.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Lid-open_Stop_to_Avoid_Danger_f12f6855-4924-4dec-a412-deb95f8fe865.jpg"
+            }
+          },
+          "item_zNYpDg": {
+            "type": "item",
+            "settings": {
+              "title": "Effective Smoke Extract System",
+              "content": "To protect health, an excellent smoke exhaust system (5400 rpm) and pre-filters quickly discharge the harmful gases produced by laser processing.",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Exhaust_System_for_Home_Use_c3ac3fe0-3d33-47d8-acb0-51e65551599f.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Exhaust_System_for_Home_Use_f7f1c558-2e43-4154-a506-80293a62101b.jpg"
+            }
+          },
+          "item_WwDVdV": {
+            "type": "item",
+            "settings": {
+              "title": "Light Filtering Lid to Protect Your Eyes",
+              "content": "The large, high-transparency cover offers excellent light filtering (0.35% light left), enabling clear process observation without goggles.",
+              "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-74_9f4d0b45-501d-4188-b8df-921710367b24.jpg",
+              "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Light_Filtering_Shield_to_Protect_Your_Eyes_0a41e2b9-2ae4-4749-8851-54dd10c3ead1.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "item_4Dgmhr",
+          "item_zNYpDg",
+          "item_WwDVdV"
+        ],
+        "settings": {
+          "small_title": "Enclosed Class 1 Laser Safety",
+          "title": "Your Safety, Our Priority",
+          "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Safety_First_235ec2ab-42ca-4622-87ab-e05d94bfbd94.jpg",
+          "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/Safety_First_63fb1671-0a89-48de-ab4e-a29564496328.jpg"
+        }
+      },
+      "mk_sec-modal_three_cards-content_modal3_a": {
+        "type": "mk_sec-modal_three_cards-content_modal3",
+        "blocks": {
+          "card_item_cp8Wf1": {
+            "type": "card_item",
+            "settings": {
+              "accessory_name": "Rotary Accessory",
+              "accessory_desc": "360° rotary engraving for cylinders and spheres",
+              "accessory_big_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-7.jpg",
+              "accessory_big_image_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-7.jpg",
+              "accessory_small_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/1_5b1844d6-42d7-4319-a2a2-7937e0e0249d.png",
+              "accessory_small_image_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/1_5b1844d6-42d7-4319-a2a2-7937e0e0249d.png",
+              "image_alt": "",
+              "jump_url": "shopify:\/\/products\/xtool-ra2-pro"
+            }
+          },
+          "card_item_E8pPp2": {
+            "type": "card_item",
+            "settings": {
+              "accessory_name": "Air Assist Set",
+              "accessory_desc": "Cutting ability for clean and neat edges",
+              "accessory_big_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-3.jpg",
+              "accessory_big_image_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-3.jpg",
+              "accessory_small_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/2_f024122c-01af-4e89-afd4-681df4339cdb.png",
+              "accessory_small_image_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/2_f024122c-01af-4e89-afd4-681df4339cdb.png",
+              "image_alt": "",
+              "jump_url": "shopify:\/\/products\/xtool-s1-smart-air-assist"
+            }
+          },
+          "card_item_GmyfR3": {
+            "type": "card_item",
+            "settings": {
+              "accessory_name": "Riser+Honeycomb Panel",
+              "accessory_desc": "For engraving and cutting thicker objects",
+              "accessory_big_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-6.jpg",
+              "accessory_big_image_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-6.jpg",
+              "accessory_small_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC_622bf03b-6383-4d49-b110-e23b8d8a07d2.jpg",
+              "accessory_small_image_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO_d6847aad-6d4a-41c8-8b7e-587300eef0ae.jpg",
+              "image_alt": "",
+              "jump_url": "https:\/\/www.xtool.com\/products\/xtool-m1-ultra-riser-base-kit"
+            }
+          },
+          "card_item_7bV614": {
+            "type": "card_item",
+            "settings": {
+              "accessory_name": "Fire Safety Set",
+              "accessory_desc": "Smart fire detection and fire extinguishing",
+              "accessory_big_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-2_de382f82-5f20-476f-925e-013e6dd7062a.jpg",
+              "accessory_big_image_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-2.jpg",
+              "accessory_small_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/4_b30064bd-5365-4a93-a5a1-6ccecee28d30.png",
+              "accessory_small_image_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/4_b30064bd-5365-4a93-a5a1-6ccecee28d30.png",
+              "image_alt": "",
+              "jump_url": "https:\/\/www.xtool.com\/products\/xtool-fire-safety-set-for-s1-auto-fire-detection-fire-extinguishing"
+            }
+          },
+          "card_item_AJGCq5": {
+            "type": "card_item",
+            "settings": {
+              "accessory_name": "Smoke Purifier",
+              "accessory_desc": "Purifies air with an impressive 99.97% efficiency",
+              "accessory_big_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/2_4ef59d7e-642c-4eda-a850-d52daf3e7afd.png",
+              "accessory_big_image_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/2_4ef59d7e-642c-4eda-a850-d52daf3e7afd.png",
+              "accessory_small_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC_d3b86c26-38fd-4b80-b084-f12aa934993c.jpg",
+              "accessory_small_image_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO_28a54880-57de-4469-9509-83c855df618b.jpg",
+              "image_alt": "",
+              "jump_url": "https:\/\/www.xtool.com\/products\/desktop-air-purifier-for-f1"
+            }
+          },
+          "card_item_TiEyg6": {
+            "type": "card_item",
+            "settings": {
+              "accessory_name": "xTool Heat Press",
+              "accessory_desc": "3-in-1 Versatile Heat Press Machine Kit",
+              "accessory_big_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-4.jpg",
+              "accessory_big_image_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-4.jpg",
+              "accessory_small_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/6_cda44ff3-7164-4ebb-9ab3-7f9a00deb0c3.png",
+              "accessory_small_image_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/6_cda44ff3-7164-4ebb-9ab3-7f9a00deb0c3.png",
+              "image_alt": "",
+              "jump_url": "https:\/\/www.xtool.com\/products\/xtool-smart-heat-press-all-in-one-kit"
+            }
+          },
+          "card_item_RfDMG7": {
+            "type": "card_item",
+            "settings": {
+              "accessory_name": "xTool Screen Printer (M Series)",
+              "accessory_desc": "Bring colors to laser world",
+              "accessory_big_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-5.jpg",
+              "accessory_big_image_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-5.jpg",
+              "accessory_small_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/7_365ae730-ec01-4258-bc73-398cac175baa.png",
+              "accessory_small_image_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/7_365ae730-ec01-4258-bc73-398cac175baa.png",
+              "image_alt": "",
+              "jump_url": "shopify:\/\/products\/xtool-screen-printer-1st-screen-printing-solution-with-laser"
+            }
+          }
+        },
+        "block_order": [
+          "card_item_cp8Wf1",
+          "card_item_E8pPp2",
+          "card_item_GmyfR3",
+          "card_item_7bV614",
+          "card_item_AJGCq5",
+          "card_item_TiEyg6",
+          "card_item_RfDMG7"
+        ],
+        "settings": {
+          "modal_small_title": "xTool Craft Family",
+          "modal_big_title": "One-Stop Solution for All Your Crafting Needs",
+          "banner_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/pc_3a70279c-8520-4bb3-8184-50003d80baa2.png",
+          "banner_image_h5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/h5.png",
+          "banner_image_alt": "",
+          "buy_now_text": "BUY NOW",
+          "first_column_num": 3,
+          "second_column_num": 2,
+          "third_column_num": 2,
+          "first_column_num_h5": 4,
+          "second_column_num_h5": 3,
+          "section_bg_color": "#f8f9fd"
+        }
+      },
+      "mk_sec_message_table_QeAPMc": {
+        "type": "mk_sec-message_table",
+        "blocks": {
+          "item_HzVTjK": {
+            "type": "item",
+            "settings": {
+              "title": "<p>Product Dimensions<\/p>",
+              "col1": "<p>620mm*498mm*178mm, 12KG<\/p>",
+              "col2": "<p>557*453*230mm, 9.8KG<\/p>"
+            }
+          },
+          "item_DE8tPi": {
+            "type": "item",
+            "settings": {
+              "title": "<p>Processing Mode<\/p>",
+              "col1": "<p>Laser Mode, Blade Mode, Inkjet Printing, Pen Drawing, Multi-module Processing<\/p>",
+              "col2": "<p>Laser Mode, Blade Mode, Multi-module Processing<\/p>"
+            }
+          },
+          "item_qq6MHa": {
+            "type": "item",
+            "settings": {
+              "title": "<p>Working Area<\/p>",
+              "col1": "<p>Laser Mode: 300mm*300mm<\/p><p>Blade Mode: 300mm*300mm(295mm*295mm for cutting blade)<\/p><p>Pen Mode: 300mm*300mm<\/p><p>Inkjet Mode: 294mm*298mm<\/p>",
+              "col2": "<p>Laser Mode: 385mm*300mm<\/p><p>Blade Mode: 365mm*300mm<\/p>"
+            }
+          },
+          "item_Tb7jxp": {
+            "type": "item",
+            "settings": {
+              "title": "<p>Max Working Speed<\/p>",
+              "col1": "<p>400mm\/s<\/p>",
+              "col2": "<p>250mm\/s<\/p>"
+            }
+          },
+          "item_XzQGMF": {
+            "type": "item",
+            "settings": {
+              "title": "<p>Laser Power<\/p>",
+              "col1": "<p>10W \/ 20W Diode Laser<\/p>",
+              "col2": "<p>5W \/ 10W Diode Laser<\/p>"
+            }
+          },
+          "item_yjdxfi": {
+            "type": "item",
+            "settings": {
+              "title": "<p>Maximum Laser Cutting Capacity<\/p>",
+              "col1": "<p>10W: 6mm Basswood Board<\/p><p>20W: 10mm Basswood Board<\/p>",
+              "col2": "<p>5W: 3mm Basswood Board<\/p><p>10W: 6mm Basswood Board<\/p>"
+            }
+          },
+          "item_dHYey4": {
+            "type": "item",
+            "settings": {
+              "title": "<p>Maximum Blade Cutting Capacity<\/p>",
+              "col1": "<p>Fine-point Blade: 1.5mm<\/p><p>Cutting Blade: 2.5mm<\/p>",
+              "col2": "<p>Fine-point Blade: 1.5mm<\/p>"
+            }
+          },
+          "item_i9nfbY": {
+            "type": "item",
+            "settings": {
+              "title": "<p>Built-in Camera<\/p>",
+              "col1": "<p>No<\/p>",
+              "col2": "<p>Yes<\/p>"
+            }
+          },
+          "item_VPeUdV": {
+            "type": "item",
+            "settings": {
+              "title": "<p>Preview<\/p>",
+              "col1": "<p>Snapshot Preview, High-speed Light Live Preview<\/p>",
+              "col2": "<p>Camera Preview, High-speed Light Live Preview<\/p>"
+            }
+          },
+          "item_eFFcFM": {
+            "type": "item",
+            "settings": {
+              "title": "<p>Positioning<\/p>",
+              "col1": "<p>Pin-point™ Positioning<\/p>",
+              "col2": "<p>Camera Positioning<\/p>"
+            }
+          },
+          "item_pY8pcp": {
+            "type": "item",
+            "settings": {
+              "title": "<p>Safety Classification<\/p>",
+              "col1": "<p>Class 1 Laser Safety<\/p>",
+              "col2": "<p>Class 1 Laser Safety<\/p>"
+            }
+          },
+          "item_nCYqGP": {
+            "type": "item",
+            "settings": {
+              "title": "<p>Connection<\/p>",
+              "col1": "<p>USB \/ Wi-Fi<\/p>",
+              "col2": "<p>USB \/ Wi-Fi<\/p>"
+            }
+          },
+          "item_bPjVJc": {
+            "type": "item",
+            "settings": {
+              "title": "<p>Support System<\/p>",
+              "col1": "<p>Android \/ iOS \/ iPad \/ Windows \/ macOS<\/p>",
+              "col2": "<p>Android \/ iOS \/ iPad \/ Windows \/ macOS<\/p>"
+            }
+          },
+          "item_diW6zd": {
+            "type": "item",
+            "settings": {
+              "title": "<p>Support File<\/p>",
+              "col1": "<p>SVG, DXF, JPG, JPEG, PNG, BMP, etc.<\/p>",
+              "col2": "<p>SVG, DXF, JPG, JPEG, PNG, BMP, etc.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "item_HzVTjK",
+          "item_DE8tPi",
+          "item_qq6MHa",
+          "item_Tb7jxp",
+          "item_XzQGMF",
+          "item_yjdxfi",
+          "item_dHYey4",
+          "item_i9nfbY",
+          "item_VPeUdV",
+          "item_eFFcFM",
+          "item_pY8pcp",
+          "item_nCYqGP",
+          "item_bPjVJc",
+          "item_diW6zd"
+        ],
+        "settings": {
+          "title": "Specifications",
+          "pc_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-75.jpg",
+          "mo_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-69.jpg",
+          "pc_image1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/PC-M1_Ultra-76.jpg",
+          "mo_image1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0467\/7985\/9095\/files\/MO-M1_Ultra-68.jpg",
+          "url": "",
+          "url1": "shopify:\/\/products\/pre-order-xtool-m1-worlds-first-desktop-hybrid-laser-blade-cutting-machine",
+          "name": "xTool M1 Ultra",
+          "name1": "xTool M1",
+          "button_txt": "Buy now",
+          "sidebar_title": "",
+          "second_nav_title": "Specs",
+          "second_nav_id": "Specs",
+          "pc_margin_bottom": "180px",
+          "mobile_margin_bottom": "120px",
+          "isPd": false
+        }
+      },
+      "mk_sec-faq-stable_a": {
+        "type": "mk_sec-faq_stable",
+        "blocks": {
+          "faq-item_fcmf1": {
+            "type": "faq-item",
+            "settings": {
+              "question": "What is the working area of different modes?",
+              "answer": "<p>Laser Mode: 300mm*300mm<\/p><p>Blade Mode: 300mm*300mm<\/p><p>Pen Mode: 300mm*300mm<\/p><p>Inkjet Mode: 294mm*298mm<\/p>"
+            }
+          },
+          "faq-item_fcmf2": {
+            "type": "faq-item",
+            "settings": {
+              "question": "Does it have a camera? How to align when processing?",
+              "answer": "<p>M1 Ultra doesn't have a built-in camera because the camera of this size machine may have an error of more than 5mm. <\/p><p>However, M1 Ultra has your back with its revolutionary Snapshot Preview and Pin-point PositioningTM tech, which is 10 times more accurate than single-camera systems.<\/p>"
+            }
+          },
+          "faq_item_tWRTwA": {
+            "type": "faq-item",
+            "settings": {
+              "question": "What's the ink type? Is it sublimation or normal ink？",
+              "answer": "<p>Normal ink (DYE ink). We focus on direct printing and are exploring new solutions beyond the existing module.Stay tuned for future updates as we aim to bring more printheads for more versatile material printing!<\/p>"
+            }
+          },
+          "faq_item_AmzWyg": {
+            "type": "faq-item",
+            "settings": {
+              "question": "How long can each ink cartridge support printing?",
+              "answer": "<p>It can print patterns that fill 20 sheets of standard A4 paper at the default concentration.<\/p><p>The specific service life is related to printing color, concentration, ambient temperature, etc.<\/p>"
+            }
+          },
+          "faq_item_9xDUif": {
+            "type": "faq-item",
+            "settings": {
+              "question": "Will it work with the xTool screen printer?",
+              "answer": "<p>Of course! M1 Ultra is compatible with xTool Screen Printer small-sized frame (M Series). We can't wait to see all the amazing work you'll create with it!<\/p>"
+            }
+          },
+          "faq_item_beenaz": {
+            "type": "faq-item",
+            "settings": {
+              "question": "Is it compatible with xTool Creative Space Software and Lightburn?",
+              "answer": "<p>M1 Ultra is a versatile craft machine. Lightburn is primarily designed for laser use, and connecting it would disable many features and result in a poor experience. Please use our official XCS software for the best performance.<\/p>"
+            }
+          },
+          "faq_item_HmCmK7": {
+            "type": "faq-item",
+            "settings": {
+              "question": "What materials can the inkjet module process?",
+              "answer": "<p>It can print on fabrics, boards, printing paper, and other materials. However, it cannot print on very dense or smooth surfaces, such as metal, glass, and ceramics, because the ink cannot penetrate or adhere. These materials can be processed after applying a suitable ink coating.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "faq-item_fcmf1",
+          "faq-item_fcmf2",
+          "faq_item_tWRTwA",
+          "faq_item_AmzWyg",
+          "faq_item_9xDUif",
+          "faq_item_beenaz",
+          "faq_item_HmCmK7"
+        ],
+        "settings": {
+          "title": "FAQ",
+          "section_bg_color": "#ffffff",
+          "sidebar_title": "",
+          "second_nav_title": "FAQ & Reviews",
+          "second_nav_id": "FAQ-Reviews",
+          "pc_margin_bottom": "180px",
+          "mobile_margin_bottom": "120px",
+          "open_judge": true
+        }
+      }
+    },
+    "order": [
+      "main",
+      "mk_sec_simple_video_banner_Qdc9BQ",
+      "mk_sec_message_bar_one_TjQbhe",
+      "mk_sec-modal-a",
+      "mk_sec_hobbyists_playground_BLryd6",
+      "mk_sec-modal_four_cards_Laxt8y",
+      "mk_sec_modal_four_cards_content_modal1_aHb6ke",
+      "mk_sec_modal_four_cards_content_modal2_3EXGtc",
+      "mk_sec_modal_four_cards_content_modal3_i8bqGy",
+      "mk_sec_modal_four_cards_content_modal4_NtenU9",
+      "mk_sec-three_cards_a",
+      "mk_sec_two_cards_dXjzcp",
+      "mk_sec_machine_swiper_Bn4DrP",
+      "mk_sec_one_card_gPCdTA",
+      "mk_sec_four_cards_VGmbx7",
+      "mk_sec_products_hover_play_xE8yLr",
+      "mk_sec_one_video_card_9tBkMM",
+      "mk_sec-info_wrapper_a",
+      "mk_sec_simple_banner_4GFfF7",
+      "mk_sec-modal_three_cards_dxndKp",
+      "mk_sec-modal_three_cards-content_modal1_a",
+      "mk_sec-modal_three_cards-content_modal2_a",
+      "mk_sec-modal_three_cards-content_modal3_a",
+      "mk_sec_message_table_QeAPMc",
+      "mk_sec-faq-stable_a"
+    ]
+  }
+  
